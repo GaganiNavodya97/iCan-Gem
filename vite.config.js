@@ -12,5 +12,15 @@ export default defineConfig({
     alias: {
       '@': fileURLToPath(new URL('./src', import.meta.url))
     }
-  }
+  },
+  build: {
+    rollupOptions: {
+      output: {
+        manualChunks: undefined, // To prevent potential conflicts with glob imports
+      },
+    },
+  },
+  define: {
+    "process.env": {},
+  },
 })
