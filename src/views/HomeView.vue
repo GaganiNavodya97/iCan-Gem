@@ -1,8 +1,19 @@
-<template>
-  <main>
-    <TheWelcome />
-  </main>
+<template>>
+  <app-footer/>
 </template>
-<script setup>
-import TheWelcome from '../components/TheWelcome.vue'
+<script>
+import AppFooter from '@/layouts/AppFooter.vue';
+
+export default {
+  components:{
+    AppFooter
+  },
+  name: "HomeView",
+  created() {},
+  data() {
+    return {};
+  },
+  props: {},
+  methods: {},
+};
 </script>

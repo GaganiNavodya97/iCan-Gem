@@ -1,8 +1,23 @@
 <template>
   <div class="about">
-    <h1>This is an about page</h1>
+    <app-footer/>
   </div>
 </template>
+<script>
+import AppFooter from '@/layouts/AppFooter.vue';
+export default {
+  components:{
+    AppFooter
+  },
+  name: "AppLayout",
+  created() {},
+  data() {
+    return {};
+  },
+  props: {},
+  methods: {},
+};
+</script>
 
 <style>
 @media (min-width: 1024px) {
