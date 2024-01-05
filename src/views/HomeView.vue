@@ -1,8 +1,10 @@
 <template>
   <main>
-    <TheWelcome />
+<AppHeader />
   </main>
 </template>
 <script setup>
-import TheWelcome from '../components/TheWelcome.vue'
+import AppHeader from '@/layouts/AppHeader.vue';
+
+
 </script>
