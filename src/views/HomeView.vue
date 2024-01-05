@@ -1,12 +1,21 @@
-<template>
-  <main>
-<AppHeader />
+<template>>
+  <app-footer/>
 <vCarousel />
-  </main>
 </template>
-<script setup>
-import AppHeader from '@/layouts/AppHeader.vue';
+<script>
+import AppFooter from '@/layouts/AppFooter.vue';
 import vCarousel from '@/components/vCarousel.vue';
 
-
+export default {
+  components:{
+    AppFooter
+  },
+  name: "HomeView",
+  created() {},
+  data() {
+    return {};
+  },
+  props: {},
+  methods: {},
+};
 </script>

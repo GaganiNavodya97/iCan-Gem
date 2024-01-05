@@ -1,15 +1,29 @@
 <template>
   <div class="about">
-    <h1>This is an about page</h1>
+    <news-articles/>
+    <app-footer/>
   </div>
 </template>
+<script>
+import AppFooter from '@/layouts/AppFooter.vue';
+import NewsArticles from '@/components/LandingPage/NewsArticles.vue';
+export default {
+  components:{
+    AppFooter,
+    NewsArticles
+  },
+  name: "AppLayout",
+  created() {},
+  data() {
+    return {};
+  },
+  props: {},
+  methods: {},
+};
+</script>
 
 <style>
 @media (min-width: 1024px) {
-  .about {
-    min-height: 100vh;
-    display: flex;
-    align-items: center;
-  }
+
 }
 </style>
