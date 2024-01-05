@@ -1,37 +1,31 @@
 import { createI18n } from 'vue-i18n';
 
-// Load locale messages dynamically
-function loadLocaleMessages() {
-    const locales = import.meta.globEager('./locales/*.json');
+// Your function to load locale messages
+async function loadLocaleMessages() {
+  const locales = import.meta.glob('./locales/*.json');
   const messages = {};
 
-  locales.keys().forEach(key => {
+  const keys = Object.keys(locales);
+  for (const key of keys) {
     const matched = key.match(/([A-Za-z0-9-_]+)\./i);
 
     if (matched && matched.length > 1) {
       const locale = matched[1];
-      messages[locale] = locales(key).default;
+      const importedLocale = await locales[key]();
+      messages[locale] = importedLocale.default;
     }
-  });
+  }
 
   return messages;
 }
 
-// Detect browser language
-const browserLanguage = navigator.language || navigator.userLanguage;
-let localeLanguage;
-
-// Map browser language to your supported languages
-if (browserLanguage.includes('zh')) {
-  localeLanguage = 'zn';
-} else if (browserLanguage.includes('ko')) {
-  localeLanguage = 'ko';
-} else {
-  localeLanguage = 'en';
-}
-
-export default createI18n({
-  locale: localeLanguage || 'en',
+// Initialize Vue I18n with loaded messages
+const i18n = await createI18n({
+  locale: 'en', // Default locale
   fallbackLocale: import.meta.env.VITE_APP_I18N_FALLBACK_LOCALE || 'en',
-  messages: loadLocaleMessages()
+  messages: await loadLocaleMessages(), // Await loading of messages
 });
+
+export default i18n;
+
+

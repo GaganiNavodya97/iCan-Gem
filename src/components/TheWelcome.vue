@@ -12,7 +12,7 @@ import SupportIcon from './icons/IconSupport.vue'
     <template #icon>
       <DocumentationIcon />
     </template>
-    <template #heading>Documentation</template>
+    <template #heading>{{$t('header.logIn') }}</template>
 
     Vue’s
     <a href="https://vuejs.org/" target="_blank" rel="noopener">official documentation</a>
@@ -86,3 +86,12 @@ import SupportIcon from './icons/IconSupport.vue'
     <a href="https://vuejs.org/sponsor/" target="_blank" rel="noopener">becoming a sponsor</a>.
   </WelcomeItem>
 </template>
+
+
+<script>
+export default {
+  created(){
+    console.log(this.$t('home'))
+  }
+}
+</script>
