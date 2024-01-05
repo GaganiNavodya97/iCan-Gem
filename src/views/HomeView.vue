@@ -1,10 +1,19 @@
-<template>
-  <main>
-<AppHeader />
-  </main>
+<template>>
+  <app-footer/>
 </template>
-<script setup>
-import AppHeader from '@/layouts/AppHeader.vue';
+<script>
+import AppFooter from '@/layouts/AppFooter.vue';
 
-
+export default {
+  components:{
+    AppFooter
+  },
+  name: "HomeView",
+  created() {},
+  data() {
+    return {};
+  },
+  props: {},
+  methods: {},
+};
 </script>
