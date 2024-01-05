@@ -1,5 +1,7 @@
 <template>
-  <div></div>
+  <div class="text-red-200">
+    hiiiiii
+  </div>
 </template>
 
 <script>
