@@ -7,15 +7,15 @@
         :breakpoints="breakpoints"
         :itemsToShow="2"
         :wrapAround="true"
-        transition="500"
-        autoplay="3000"
+        :transition=500
+        :autoplay=3000
         pauseAutoplayOnHover
         class="gem-carousel"
       >
-        <Slide v-for="slide in images" :key="slide.name">
+        <Slide v-for="slide in data" :key="slide.name">
           <div class="slide-content">
-            <img :src="slide.image" alt="Image" class="gem-image" />
-            <h2 class="gem-title">{{ slide.name }} Gems Stone</h2>
+            <img :src="slide.image" alt="`Image of ${slide.name}`" class="gem-image" />
+            <h2 class="gem-title">{{ slide.name }}</h2>
             <div class="description-box">
               <p class="gem-description">{{ slide.description }}</p>
             </div>
@@ -36,11 +36,7 @@
   <script>
 import { Carousel, Slide, Navigation, Pagination } from 'vue3-carousel'
 import 'vue3-carousel/dist/carousel.css'
-import image1 from '@/assets/images/pngwing1.png'
-import image2 from '@/assets/images/pngwing2.png'
-import image3 from '@/assets/images/pngwing3.png'
-import image4 from '@/assets/images/pngwing1.png'
-import image5 from '@/assets/images/pngwing2.png'
+
 
 export default {
   components: {
@@ -49,57 +45,22 @@ export default {
     Navigation,
     Pagination
   },
+  props: {
+    slidesData: {
+      type: Array,
+      required: true
+    }
+  },
 
   data() {
     return {
       breakpoints: {
-        700: {
-          // For screens 700px and wider
+        768: {
           itemsToShow: 3,
           snapAlign: 'center'
         }
       },
-
-      // images: [image1, image2, image3, image4, image5  ]
-
-      images: [
-        {
-          name: 'Chrysoberyl',
-          image: image1,
-          description:
-            'Ruby stands for love, courage, emotions, and interest.For centuries, this gem has been considered the king of all gemstones.'
-        },
-        {
-          name: 'Ruby',
-          image: image2,
-          description:
-            'Ruby stands for love, courage, emotions, and interest.For centuries, this gem has been considered the king of all gemstones.'
-        },
-        {
-          name: 'Chrysoberyl',
-          image: image3,
-          description:
-            'Ruby stands for love, courage, emotions, and interest.For centuries, this gem has been considered the king of all gemstones.'
-        },
-        {
-          name: 'Ruby',
-          image: image1,
-          description:
-            'Ruby stands for love, courage, emotions, and interest.For centuries, this gem has been considered the king of all gemstones.'
-        },
-        {
-          name: 'Chrysoberyl',
-          image: image2,
-          description:
-            'Ruby stands for love, courage, emotions, and interest.For centuries, this gem has been considered the king of all gemstones.'
-        },
-        {
-          name: 'Ruby',
-          image: image3,
-          description:
-            'Ruby stands for love, courage, emotions, and interest.For centuries, this gem has been considered the king of all gemstones.'
-        }
-      ]
+      data: this.slidesData,
     }
   }
 }
@@ -127,14 +88,15 @@ export default {
   max-width: 1000px;
   margin: auto;
   text-align: center;
-  padding-bottom: 5px;
-  /* background-color: #FFF; */
+  padding-bottom: 50px;
 }
 
 .carousel-title {
   font-size: 2em;
   margin-bottom: 1em;
+  font-weight: 400;
   font-family: Sorts Mill Goudy;
+  padding-top: 1.5em;
 }
 
 .gem-carousel .carousel__slide {
@@ -143,13 +105,11 @@ export default {
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
   border-radius: 10px;
   text-align: center;
-  opacity: 1;
-  /* opacity: 0.9; */
-  transform: rotateY(-20deg) scale(0.85);
+  transform: rotateY(-20deg) scale(0.88);
 }
 
 .gem-carousel .carousel__slide--active {
-  transform: scale(1.03);
+  transform: scale(1);
   opacity: 1;
 }
 
@@ -173,14 +133,14 @@ export default {
   color: #666;
   margin-bottom: 3em;
   font-family: Sorts Mill Goudy;
+  line-height: 1.5em;
 }
 
 .link-box {
   background: #dfac93;
   color: white;
-  padding: 5px;
-  /* margin-bottom: 5em; */
-  margin: 0.5em 5em;
+  display: inline;
+  padding: 8px 12px;
 }
 
 .carousel__viewport {
@@ -213,13 +173,14 @@ export default {
 }
 
 @media (max-width: 768px) {
-  /* .carousel__navigation {
-  display: none;
-} */
+
+  .carousel__navigation, .carousel__next, .carousel__prev {
+    display: none;
+  }
+  
   .carousel__pagination {
     margin: 12px 0px;
     display: flex;
-    /* width: 100%; */
   }
 
   .gem-title,
@@ -230,9 +191,7 @@ export default {
   }
 
   .link-box {
-    margin: 0.3em;
-    font-size: 0.7em;
-    padding: 5px;
+    font-size: 0.8em;
   }
 
   .gem-image {
