@@ -6,7 +6,7 @@
 </template>
 <script setup>
 import AppHeader from '@/layouts/AppHeader.vue';
-import AppLayout from '@/layouts/AppLayout.vue';
+import AppLayout from '@/layouts/AppLayout.vue'; 
 
 
 </script>
