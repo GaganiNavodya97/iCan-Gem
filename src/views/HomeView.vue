@@ -1,7 +1,7 @@
 <template>
   <main>
 <AppHeader />
-<!-- <AppLayout/> -->
+<AppLayout/>
   </main>
 </template>
 <script setup>

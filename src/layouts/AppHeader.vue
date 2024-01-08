@@ -1,110 +1,109 @@
 <template>
-    <!-- <div class="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center">
-<nav class="relative select-none lg:flex ">
-  <div class="flex">
-    <a href="#" class="relative py-2 flex items-center ">
-      <img src="../assets/header-icons/logo.png"/>
-    </a>
+  <Disclosure as="nav" class="" v-slot="{ open }">
+    <div class="mx-auto max-w-7xl px-3 sm:px-6 lg:px-8 py-3 sm:py-2">
+      <div class="flex h-16 items-center justify-between">
+        <div class="flex items-center justify-center">
+          <div>
+            <img class="" src="../assets/header-icons/logo.png" alt="logo" />
+          </div>
+          <!-- Updated div for centering -->
+          <div class="hidden flex md:flex ml-[100px] font">
+            <a
+              v-for="item in navigation"
+              :key="item.name"
+              :href="item.href"
+              class="text-[#565656] hover:text-black py-2 text-lg font-medium flex items-center justify-center"
+              :aria-current="item.current ? 'page' : undefined"
+            >
+              {{ item.name }}
+            </a>
+          </div>
+        </div>
 
-   
-  
+        <div class="hidden md:flex md:order-2 md:items-center md:justify-end">
+          <img src="../assets/header-icons/search.png" alt="Search" class="mr-4" />
+          <img src="../assets/header-icons/shopping.png" alt="Shopping" class="mr-4" />
+          <img src="../assets/header-icons/user.png" alt="User" />
+        </div>
 
-    <button class="block lg:hidden cursor-pointer ml-auto relative w-12 h-12 p-4">
-      <svg class="fill-current text-black" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z"/></svg>
-      <svg class="fill-current text-black" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M10 8.586L2.929 1.515 1.515 2.929 8.586 10l-7.071 7.071 1.414 1.414L10 11.414l7.071 7.071 1.414-1.414L11.414 10l7.071-7.071-1.414-1.414L10 8.586z"/></svg>
-    </button>
-  </div> -->
+        <div class="sm:hidden flex items-center justify-end">
+          <img src="../assets/header-icons/search.png" alt="Search" class="icon" />
+          <img src="../assets/header-icons/shopping.png" alt="Shopping" class="icon" />
 
-  <!-- <div class="flex items-center">
-    <nav class="flex items-center justify-center">
-      <a href="#" class="flex-no-grow flex-no-shrink relative py-2 px-4 leading-normal text-black no-underline flex items-center hover:bg-grey-dark">
-        Collection
-      </a>
-      
-      <a href="#" class="flex-no-grow flex-no-shrink relative py-2 px-4 leading-normal text-black no-underline flex items-center hover:bg-grey-dark">
-        Contact Us
-      </a>
-    </nav>
-  </div> -->
-
-  <!-- <nav class="mx-auto flex flex-wrap items-center text-base justify-center">
-      <a class="mr-5 hover:text-gray-900">First Link</a>
-      <a class="mr-5 hover:text-gray-900">Second Link</a>
-      <a class="mr-5 hover:text-gray-900">Third Link</a>
-      <a class="mr-5 hover:text-gray-900">Fourth Link</a>
-    </nav>
-
-  <div class="lg:flex lg:items-stretch lg:flex-no-shrink lg:flex-grow">
-    <div class="lg:flex lg:items-stretch lg:justify-end ml-auto">
-      <a href="#" class="flex-no-grow flex-no-shrink relative py-2 px-4 leading-normal text-black no-underline flex items-center hover:bg-grey-dark">Item 1</a>
-      <a href="#" class="flex-no-grow flex-no-shrink relative py-2 px-4 leading-normal text-black no-underline flex items-center hover:bg-grey-dark">Item 2</a>
-      <a href="#" class="flex-no-grow flex-no-shrink relative py-2 px-4 leading-normal text-black no-underline flex items-center hover:bg-grey-dark">Item 3</a>
-    </div>
-  </div>
-</nav>
-</div> -->
-
-
-
-<header class="text-gray-600 body-font">
-    <div class="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center justify-between">
-      <a class="order-first md:order-none md:ml-0 md:mr-auto">
-            <img src="../assets/header-icons/logo.png" alt="Logo"/>
-        </a>
-
-      
-      <div class="md:hidden absolute top-0 right-0 mt-2 mr-5">
-        <button class="focus:outline-none" @click="toggleMenu">
-          <img v-show="!isMenuOpen" src="../assets/header-icons/ham.png" alt="Menu"/>
-          <img v-show="isMenuOpen" src="../assets/header-icons/x.png" alt="Close"/>
-        </button>
-      </div>
-
-      <nav v-show="isMenuOpen" class="md:hidden w-full flex flex-col items-center justify-center">
-        <a class="py-2 hover:text-gray-900">Collection</a>
-        <a class="py-2 hover:text-gray-900">Contact Us</a>
-      </nav>
-
-      <nav :class="{ 'hidden': !isMenuOpen, 'md:ml-auto md:mr-auto flex flex-wrap items-center text-base justify-center md:flex md:items-center md:justify-end': true, 'md:flex': isMenuOpen }">
-        <a class="hidden md:block hover:text-gray-900">Collection</a>
-        <a class="hidden md:block hover:text-gray-900">Contact Us</a>
-      </nav>
-
-      <div class="md:order-2 md:flex md:items-center md:justify-end">
-        <img src="../assets/header-icons/search.png" alt="Search" class="mr-4"/>
-        <img src="../assets/header-icons/shopping.png" alt="Shopping" class="mr-4"/>
-        <img src="../assets/header-icons/user.png" alt="User"/>
+          <DisclosureButton
+            class="relative inline-flex sm:hidden items-center justify-center p-2 text-gray-400 focus:outline-none"
+          >
+            <span class="absolute -inset-0.5"></span>
+            <span class="sr-only">Open main menu</span>
+            <Bars3Icon v-if="!open" class="block h-6 w-6" aria-hidden="true" />
+            <XMarkIcon v-else class="block h-6 w-6" aria-hidden="true" />
+          </DisclosureButton>
+        </div>
       </div>
     </div>
-  </header>
+
+    <DisclosurePanel class="sm:hidden h-screen">
+      <div class="space-y-1 px-2 pb-3 pt-2">
+        <DisclosureButton
+          key="item.name"
+          as="a"
+          href=""
+          class="text-[#565656] hover:text-black py-2 text-lg font-medium flex items-center justify-center"
+        >
+          Profile
+        </DisclosureButton>
+
+        <DisclosureButton
+          key="item.name"
+          as="a"
+          href=""
+          class="text-[#565656] hover:text-black py-2 text-lg font-medium flex items-center justify-center"
+        >
+          Collection
+        </DisclosureButton>
+
+        <DisclosureButton
+          key="item.name"
+          as="a"
+          href=""
+          class="text-[#565656] hover:text-black py-2 text-lg font-medium flex items-center justify-center"
+        >
+          Favourite
+        </DisclosureButton>
+
+        <DisclosureButton
+          key="item.name"
+          as="a"
+          href=""
+          class="text-[#565656] hover:text-black py-2 text-lg font-medium flex items-center justify-center"
+        >
+          Contact Us
+        </DisclosureButton>
+      </div>
+    </DisclosurePanel>
+  </Disclosure>
 </template>
 
-<script>
-export default {
-  data() {
-    return {
-      isMenuOpen: false
-    };
-  },
-  methods: {
-    toggleMenu() {
-      this.isMenuOpen = !this.isMenuOpen;
-    }
-  }
-};
+<script setup>
+import { Disclosure, DisclosureButton, DisclosurePanel } from '@headlessui/vue'
+import { Bars3Icon, XMarkIcon } from '@heroicons/vue/24/outline'
+
+const navigation = [
+  { name: 'Collection', href: '#', current: true },
+  { name: 'Contact Us', href: '#', current: false }
+  // { name: 'Favourite', href: '#', current: false },
+  // { name: 'Contact Us', href: '#', current: false }
+]
 </script>
 
-<style>
-@media (max-width: 768px) {
-  .md:hidden {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
+<style scoped>
+.icon {
+  height: 24px;
+  width: 24px;
+  object-fit: contain;
 }
-
-
+.font {
+  font-family: Montserrat;
+  word-wrap: break-word;
+}
 </style>
-
-
