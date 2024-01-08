@@ -17,14 +17,16 @@ import image3 from '@/assets/images/pngwing3.png'
 import ring1 from '@/assets/images/ring1.png'
 import ring2 from '@/assets/images/ring2.png'
 import ring3 from '@/assets/images/ring3.png'
+import AppHeader from '@/layouts/AppHeader.vue';
 
 
 
 
 export default {
   components:{
-    vCarousel,NewsArticles
-  },
+    vCarousel, NewsArticles,
+    AppHeader
+},
   name: "HomeView",
   created() {},
   data() {
