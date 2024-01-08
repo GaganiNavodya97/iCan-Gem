@@ -1,13 +1,16 @@
 <template>
-  
+  <AppHeader/>
+  <AppLayout/>
   <vCarousel :slidesData="gemData"/>
   <NewsArticles />
+  <Helps/>
   <vCarousel :slidesData="ringData"/>
 
 </template>
 <script>
 import vCarousel from '@/components/vCarousel.vue';
 import NewsArticles from '@/components/LandingPage/NewsArticles.vue';
+import Helps from '@/components/LandingPage/QuestionHelp.vue'
 
 import image1 from '@/assets/images/pngwing1.png'
 import image2 from '@/assets/images/pngwing2.png'
@@ -17,14 +20,19 @@ import image3 from '@/assets/images/pngwing3.png'
 import ring1 from '@/assets/images/ring1.png'
 import ring2 from '@/assets/images/ring2.png'
 import ring3 from '@/assets/images/ring3.png'
+import AppHeader from '@/layouts/AppHeader.vue';
+import AppLayout from '@/layouts/AppLayout.vue';
+
 
 
 
 
 export default {
   components:{
-    vCarousel,NewsArticles
-  },
+    vCarousel, NewsArticles,AppLayout,
+    AppHeader,
+    Helps
+},
   name: "HomeView",
   created() {},
   data() {
