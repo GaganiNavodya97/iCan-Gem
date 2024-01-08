@@ -1,75 +1,66 @@
 <template>
   <div class="question-container">
     <div class="header-container">
-      <div class="heading">FAQ</div>
-      <div class="main-heading">Need Help?</div>
-      <div class="heading-discription">If you have any questions, feel free to contact us in any convenient way.</div>
+      <div class="heading">{{ $t('faq.faq') }}</div>
+      <div class="main-heading">{{ $t('faq.needHelp') }}</div>
+      <div class="heading-discription">{{ $t('faq.description') }}</div>
     </div>
     <div class="body-container">
       <section class="text-gray-600 body-font overflow-hidden">
-        <div class="container px-5 py-24 mx-auto">
-          <div class="flex flex-wrap -m-12">
-            <div class="p-12 md:w-1/2 flex flex-col items-start accodian-container">
+        <div class="container lg:px-5 lg:py-24 mx-auto">
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+            <div class="flex flex-col items-start accordion-container mt-4">
               <div class="accordion">
-                <div v-for="(item, index) in 5" :key="index" class="panel" :class="{ active: activePanel === index }">
+                <div v-for="(item, index) in collapses" :key="index" class="panel">
                   <div class="main-panel-container">
-                    <div class="header" @click="togglePanel(index)">
-                      Section {{ index + 1 }}
+                    <div class="header">
+                      {{ item.title }}
                     </div>
-                    
+                    <div @click="togglePanel(index)">
+                      <img :src="PlusIcon" alt="" class="plus-icon">
+                    </div>
                   </div>
-                  <div class="content" :class="{ active: activePanel === index }">
-                    Content for Section {{ index + 1 }}
+                  <div class="content" v-if="this.activePanel === index">
+                    {{ item.title }}
                   </div>
                 </div>
               </div>
             </div>
-            <div class="p-12 md:w-1/2 flex flex-col items-end image-container">
+            <div class="flex flex-col items-end md:block ml-5 hidden">
               <img :src="FAQImg" alt="">
             </div>
           </div>
         </div>
       </section>
-      <!-- <div class="accodian-container">
-        <VaAccordion
-          v-model="value"
-          class="max-w-sm"
-        >
-        <VaCollapse
-          v-for="(collapse, index) in collapses"
-          :key="index"
-          :header="collapse.title"
-        >
-        <template #content>
-          {{ collapse.content }}
-        </template>
-      </VaCollapse>
-      </VaAccordion>
-      </div>
-      <div class="image-container">
-        <img :src="FAQImg" alt="">
-      </div> -->
     </div>
   </div>
 </template>
 <script>
 import FAQImg from '@/assets/images/faq.png'
+import PlusIcon from '@/assets/icons/plus-1.png'
 export default {
   name: "QuestionHelp",
   created() {},
   data() {
     return {
-      value: [false, false, false],
+      activePanel: null,
       collapses: [
-        { title: "First collapse", content: "First collapse content" },
-        { title: "Second collapse", content: "Second collapse content" },
-        { title: "Third collapse", content: "Third collapse content" },
+        { title: "Where do you ship to?", content: "First collapse content" },
+        { title: "How can I make the order?", content: "Second collapse content" },
+        { title: "Can I change my order after it is placed?", content: "Third collapse content" },
+        { title: "Do you have offline stores?", content: "Third collapse content" },
+        { title: "Can I cancel my order?", content: "Third collapse content" },
       ],
-      FAQImg: FAQImg
+      FAQImg: FAQImg,
+      PlusIcon:PlusIcon
     };
   },
   props: {},
-  methods: {},
+  methods: {
+    togglePanel(index) {
+      this.activePanel = index
+    },
+  },
 };
 </script>
 
@@ -79,7 +70,6 @@ export default {
 .question-container
   background-color: $background-color
 .body-container
-  display: flex
   justify-content: space-between
   margin-top: 1.5rem
 .accodian-container
@@ -95,11 +85,16 @@ export default {
   width: 90vw
 .heading-discription
   width: 525px
+  @media (max-width: 900px)
+    width:320px
 .accordion
   margin-left: 2rem
   width: 40rem
   border-radius: 4px
   text-align: left
+  @media (max-width: 900px)
+    margin-left: 2rem
+    width: 20rem
 .panel
   width: 100%
   text-align: left
@@ -109,13 +104,25 @@ export default {
     background-color: #f1f1f1
 .content
   padding: 15px
-  display: none
-  &.active
-    display: block
+  padding-left: 2rem
+  padding-right: 2rem
+.active-content
+   display: flex
+   align-items: center
+   text-align: left
 .header
   padding: 15px
   cursor: pointer
   user-select: none
-  &:hover
-    background-color: #ddd
+.plus-icon
+   width: 1.5rem
+   height: 1.5rem
+   margin-top: 0.7rem
+.main-panel-container
+   padding-left: 2rem
+   padding-right: 2rem
+   display: flex
+   justify-content: space-between
+.content-active
+  display: block
 </style>
