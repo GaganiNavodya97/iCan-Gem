@@ -34,7 +34,7 @@ export default {
           name: 'Chrysoberyl Gems Stone',
           image: image1,
           description:
-            'Ruby stands for love, courage, emotions, and interest.For centuries, this gem has been considered the king of all gemstones.'
+            "The chrysoberyl group is perhaps most famous for its cat's eye gemstone variety, but the rarest and most valuable chrysoberyl is alexandrite"
         },
         {
           name: 'Ruby Gems Stone',
@@ -43,15 +43,15 @@ export default {
             'Ruby stands for love, courage, emotions, and interest.For centuries, this gem has been considered the king of all gemstones.'
         },
         {
-          name: 'Chrysoberyl Gems Stone',
+          name: 'Peridot Gems Stone',
           image: image3,
           description:
-            'Ruby stands for love, courage, emotions, and interest.For centuries, this gem has been considered the king of all gemstones.'
+            'Found in green-blue to blue colour variations, aquamarine crystals get the blue tone due to the presence of iron within the crystal'
         },
       ],
       ringData: [
         {
-          name: 'Ruby Gems Stone',
+          name: 'Peridot Gems Stone',
           image: ring1,
           description:
             'Ruby stands for love, courage, emotions, and interest.For centuries, this gem has been considered the king of all gemstones.'
