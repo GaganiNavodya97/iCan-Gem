@@ -14,18 +14,30 @@
   "gemsFavoriteSection":{
       "title":"Choose Your Favorites.",
       "learnMore":"Learn More",
-      "chrysoberyl":{
+      "Sapphire":{
           "title":"Sapphire Gems Stone",
           "description":"Sapphire refers to the blue variety of corundum, when used alone. Fancy colored sapphires appear in a wide range of colors, including vivid yellow, orange and pink."
       },
-      "ruby":{
+      "Ruby":{
           "title":"Ruby Gems Stone",
           "description":"Ruby stands for love, courage, emotion, and interest. For centuries, this gem has been considered the king of all gemstones."
       },
-      "reridot":{
+      "Aquamarine":{
           "title":"Aquamarine Gems Stone",
           "description":"Found in green-blue to blue colour variations, aquamarine crystals get the blue tone due to the presence of iron within the crystal."
-      }
+      },
+      "Chrysoberyl":{
+        "title":"Chrysoberyl Gems Stone",
+        "description":"The chrysoberyl group is perhaps most famous for its cat's eye gemstone variety, but the rarest and most valuable chrysoberyl is alexandrite."
+    },
+    "Emerald":{
+        "title":"Emerald Gems Stone",
+        "description":"Emerald is the green to greenish blue variety of the mineral Beryl. Top fine quality Emerald Gems are even more valuable than diamonds."
+    },
+    "Tsavorite":{
+        "title":"Tsavorite Gems Stone",
+        "description":"An emerald-green variety of grossular garnet, tsavorite is one of the most popular and expensive varieties of garnet. Suitable for any type of jewelry"
+    }
   },
   "gemsNewColection":{
       "heading_1":"NEW IN",
@@ -38,17 +50,17 @@
   "juweliersFavoriteSection":{
       "title":"Choose Your Favorites.",
       "learnMore":"Learn More",
-      "chrysoberyl":{
-          "title":"Chrysoberyl Gems Stone",
-          "description":"The chrysoberyl group is perhaps most famous for its cat's eye gemstone variety, but the rarest and most valuable chrysoberyl is alexandrite."
+      "SapphireRings":{
+          "title":"Sapphire Rings",
+          "description":"Gorgeous sapphire rings, including wedding rings and engagement rings, can be found on Gem Star Collection. Various colors of sapphires set with diamonds & gemstones."
       },
-      "ruby":{
-          "title":"Emerald Gems Stone",
-          "description":"Emerald is the green to greenish blue variety of the mineral Beryl. Top fine quality Emerald Gems are even more valuable than diamonds."
+      "RubyRings":{
+          "title":"Ruby Rings",
+          "description":"Explore enchanting ruby rings at Gem Star. Let the fiery allure of rubies, symbols of passion and love, make a timeless statement on your finger."
       },
-      "reridot":{
-          "title":"Tsavorite Gems Stone",
-          "description":"An emerald-green variety of grossular garnet, tsavorite is one of the most popular and expensive varieties of garnet. Suitable for any type of jewelry"
+      "TsavoriteRings":{
+          "title":"Tsavorite Rings",
+          "description":"One of the main advantages of tsavorite rings is their unparalleled beauty. The Tsavorite offers a captivating shade of green, as intense as an emerald."
       }
   },
   "juweliersNewColection":{

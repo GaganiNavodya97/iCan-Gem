@@ -14,17 +14,29 @@
 	"gemsFavoriteSection":{
 		"title":"选择您的最爱。",
 		"learnMore":"了解更多",
-		"chrysoberyl":{
+		"Sapphire":{
 			"title":"菊部分宝石石",
 			"description":"蓝宝石单独使用时指的是蓝色的蓝色种类。精美的彩色蓝宝石以各种颜色出现，包括生动的黄色，橙色和粉红色。"
 		},
-		"ruby":{
+		"Ruby":{
 			"title":"红宝石宝石",
 			"description":"红宝石代表爱，勇气，情感和兴趣。几个世纪以来，这种宝石一直被认为是所有宝石之王。"
 		},
-		"reridot":{
+		"Aquamarine":{
 			"title":"海蓝宝石",
 			"description":"海蓝宝石晶体以绿色至蓝色的变化而发现，由于晶体中存在铁，因此获得了蓝色。"
+		},
+		"Chrysoberyl":{
+			"title":"金蓝宝石",
+			"description":"金蓝宝石也许以其猫的眼宝石品种而闻名，但最稀有，最有价值的金蓝宝石是亚历山大宝石。"
+		},
+		"Emerald":{
+			"title":"祖母绿",
+			"description":"祖母绿宝石是国际珠宝界公认的名贵宝石之一。顶级优质的祖母绿宝石比钻石更有价值。"
+		},
+		"Tsavorite":{
+			"title":"少佛来",
+			"description":"Tsavorite是翠绿色的绿色石榴石，是石榴石的最受欢迎和昂贵的品种之一。适合任何类型的珠宝"
 		}
 	},
 	"gemsNewColection":{
@@ -38,17 +50,17 @@
 	"juweliersFavoriteSection":{
 		"title":"选择您的最爱。",
 		"learnMore":"了解更多",
-		"chrysoberyl":{
-			"title":"金蓝宝石",
-			"description":"金蓝宝石也许以其猫的眼宝石品种而闻名，但最稀有，最有价值的金蓝宝石是亚历山大宝石。"
+		"SapphireRings":{
+			"title":"蓝宝石戒指",
+			"description":"华丽的蓝宝石戒指，包括结婚戒指和订婚戒指，可以在宝石之星系列中找到。各种颜色的蓝宝石与钻石和宝石。"
 		},
-		"ruby":{
-			"title":"祖母绿",
-			"description":"祖母绿宝石是国际珠宝界公认的名贵宝石之一。顶级优质的祖母绿宝石比钻石更有价值。"
+		"RubyRings":{
+			"title":"红宝石戒指",
+			"description":"在宝石之星探索迷人的红宝石环。让红宝石的炽烈魅力，激情和爱的象征在您的手指上发表永恒的陈述。"
 		},
-		"reridot":{
-			"title":"少佛来",
-			"description":"Tsavorite是翠绿色的绿色石榴石，是石榴石的最受欢迎和昂贵的品种之一。适合任何类型的珠宝"
+		"TsavoriteRings":{
+			"title":"少佛来戒指",
+			"description":"Tsavorite戒指的主要优点之一是它们无与伦比的美丽。 Tsavorite提供了令人着迷的绿色阴影，就像翡翠一样强烈。"
 		}
 	},
 	"juweliersNewColection":{
