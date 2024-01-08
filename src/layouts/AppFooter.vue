@@ -20,7 +20,7 @@
                 <!-- <li class="mb-4">
                   <a href="#" class="hover:underline">+1 (234) 567 89 00</a>
                 </li> -->
-                <li class="mb-4 leading-5">
+                <li class="mb-4 leading-6">
                   <a href="#" class="hover:underline">iCan Lanka (Private) Ltd
                     #422, 13th Floor, R A De Mel Mawatha, Colombo 03. Sri Lanka</a>
                 </li>
@@ -78,7 +78,7 @@
               <!-- <li class="mb-4">
                 <a href="#" class="hover:underline">+1 (234) 567 89 00</a>
               </li> -->
-              <li class="mb-4">
+              <li class="mb-4 leading-5">
                 <a href="#" class="hover:underline">iCan Lanka (Private) Ltd
                   #422, 13th Floor, R A De Mel Mawatha, Colombo 03. Sri Lanka</a>
               </li>
