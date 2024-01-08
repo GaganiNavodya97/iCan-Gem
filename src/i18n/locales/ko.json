@@ -1,9 +1,98 @@
 {
-    "header":{
-		"logIn":"登录",
-		"SL":"斯里兰卡",
-		"China":"中国",
-		"Laos":"老挝",
-		"Turkiye":"土耳其"
+
+	"menuBar":{
+	  "Collection":"수집",
+	  "ContactUs":"문의하기"
+	},
+	"hereSection":{
+		"title_1":"보석 및 보석",
+		"title_2":"보석 스타로 밝게 빛납니다",
+		"title_3":"매일 우리의 훌륭한 보석과 함께 당신의 특별한 날입니다!",
+		"shop":"가게"
+	},
+	"gemsFavoriteSection":{
+		"title":"즐겨 찾기를 선택하십시오.",
+		"learnMore":"더 알아보기",
+		"chrysoberyl":{
+			"title":"사파이어 보석 석",
+			"description":"사파이어는 단독으로 사용될 때 푸른 종류의 Corundum을 말합니다. 멋진 색상의 사파이어는 생생한 노란색, 주황색 및 분홍색을 포함한 다양한 색상으로 나타납니다."
+		},
+		"ruby":{
+			"title":"루비 보석 스톤",
+			"description":"루비는 사랑, 용기, 감정 및 관심을 나타냅니다. 수세기 동안,이 보석은 모든 보석의 왕으로 여겨져 왔습니다."
+		},
+		"reridot":{
+			"title":"아쿠아 마린 보석 석",
+			"description":"녹색 파란색에서 푸른 색 변동에서 발견되는 Aquamarine 결정은 결정 내에서 철의 존재로 인해 푸른 색조를 얻습니다."
+		}
+	},
+	"gemsNewColection":{
+		"heading_1":"새로운",
+		"heading_2":"새 컬렉션.",
+		"description":"새로운 2024 컬렉션의 고급 보석 컬렉션에서 밝게 빛납니다!",
+		"earnings":"수입",
+		"rings":"반지",
+		"necklaces":"목걸이"
+	},
+	"juweliersFavoriteSection":{
+		"title":"즐겨 찾기를 선택하십시오.",
+		"learnMore":"더 알아보기",
+		"chrysoberyl":{
+			"title":"Chrysoberyl Gems Stone",
+			"description":"Chrysoberyl Group은 아마도 고양이의 눈 보석 품종으로 가장 유명하지만 가장 희귀하고 가장 귀중한 Chrysoberyl은 Alexandrite입니다."
+		},
+		"ruby":{
+			"title":"에메랄드 보석 석",
+			"description":"에메랄드는 미네랄 베릴의 녹색에서 녹색의 푸른 품종입니다. 최고의 고급 에메랄드 보석은 다이아몬드보다 훨씬 더 가치가 있습니다."
+		},
+		"reridot":{
+			"title":"Tsavorite 보석 석",
+			"description":"에메랄드-그린 다양한 매트 넷, Tsavorite는 가장 인기 있고 값 비싼 종류의 가넷 중 하나입니다. 모든 유형의 보석에 적합합니다"
+		}
+	},
+	"juweliersNewColection":{
+		"heading_1":"새로운 IN,",
+		"heading_2":"새 컬렉션.,",
+		"description":"우리의 새로운 2024 컬렉션의 고급 보석 컬렉션에서 Shine Bright!,",
+		"earnings":"수입,",
+		"rings":"반지,",
+		"necklaces":"목걸이"
+	},
+	"blog":{
+		"blog":"블로그",
+		"heading_1":"우리의 뉴스와 기사.",
+		"heading_2":"최신 기사를 확인하여 브랜드에 대한 자세한 내용을 확인하고 Jewelry Care에 대한 팁을 얻으십시오.",
+		"readMore":"더 읽기,",
+		"blog_01":{
+			"title":"가장 낭만적 인 선택,",
+			"description":"발렌타인 데이가 다가오고 있습니다! 당신이 아직 당신의 복장을 결정하지 않았다면, 우리는 볼 수있는 최고의 보석 세트를 선택했습니다 ..."
+		},
+		"blog_02":{
+			"title":"새로운 핫 트렌드를 환영합니다.",
+			"description":"발렌타인 데이가 다가오고 있습니다! 당신이 아직 당신의 복장을 결정하지 않았다면, 우리는 볼 수있는 최고의 보석 세트를 선택했습니다 ..."
+		},
+		"blog_03":{
+			"title":"비즈니스 스타일을위한 보석,",
+			"description":"발렌타인 데이가 다가오고 있습니다! 당신이 아직 당신의 복장을 결정하지 않았다면, 우리는 볼 수있는 최고의 보석 세트를 선택했습니다 ..."
+		}
+	},
+	"faq":{
+		"faq":"자주하는 질문,",
+		"needHelp":"도움이 필요하다?,",
+		"description":"궁금한 점이 있으면 편리한 방식으로 문의하십시오.",
+		"shipTo":"어디로 배송합니까?,",
+		"makeOrder":"주문을 어떻게 할 수 있습니까?,",
+		"changeOrder":"주문한 후에 주문을 변경할 수 있습니까?,",
+		"offline":"오프라인 상점이 있습니까?,",
+		"cancelOrder":"주문을 취소 할 수 있습니까?"
+	},
+	"footer":{
+		"customerCare":"고객 지원,",
+		"certificates":"인증서,",
+		"faq":"자주하는 질문,",
+		"legalNprivacy":"법률 및 개인 정보 보호,",
+		"returns":"보고,",
+		"followus":"우리를 따르십시오,",
+		"getInTouch":"연락하십시오"
 	}
-}
+  }

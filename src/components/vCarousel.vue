@@ -1,7 +1,7 @@
 <template>
   <div class="carousel-box">
     <div class="carousel-container">
-      <h1 class="carousel-title">Choose Your Favorites.</h1>
+      <h1 class="carousel-title">{{ $t('gemsFavoriteSection.title') }}</h1>
 
       <Carousel
         :breakpoints="breakpoints"
@@ -20,7 +20,7 @@
               <p class="gem-description">{{ slide.description }}</p>
             </div>
             <div class="link-box">
-              <a href="#" class="learn-more">— Learn more</a>
+              <a href="#" class="learn-more">— {{ $t('gemsFavoriteSection.learnMore') }}</a>
             </div>
           </div>
         </Slide>
@@ -92,7 +92,7 @@ export default {
 }
 
 .carousel-title {
-  font-size: 2em;
+  font-size: 51.749px;
   margin-bottom: 1em;
   font-weight: 400;
   font-family: Sorts Mill Goudy;
