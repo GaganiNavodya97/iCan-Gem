@@ -26,12 +26,12 @@
         </Slide>
         <template #addons>
           <Navigation>
-            <!-- <template #next>
-              <span> >> </span>
+            <template #next>
+              <span class="nav_icon"> > </span>
             </template>
             <template #prev>
-               <span> << </span>
-           </template> -->
+               <span class="nav_icon"> < </span>
+           </template>
           </Navigation>
           <pagination />
         </template>
@@ -73,23 +73,26 @@ export default {
 </script>
 
 <style lang="css">
-/* .carousel__next {
-    background-color: grey;
-    border-radius: 50%;
-} */
-
-/* .carousel-navigation-icon {
-    width: 50px;
-    height: auto;
-} */
 
 .carousel__prev,
 .carousel__next {
-  /* border: 5px solid white; */
   background-color: #fafafa;
-  padding: 5px;
-  /* margin: 100px; */
+  padding: 30px;
   border-radius: 50%;
+}
+
+.nav_icon{
+  font-size: 60px;
+  font-weight: 100;
+  color: #ADADAD;
+}
+
+.carousel__prev {
+  left: -45px;
+}
+
+.carousel__next {
+  right: -45px;
 }
 
 .carousel-box {
@@ -107,7 +110,6 @@ export default {
 .carousel-container {
   max-width: 1000px;
   margin: auto;
-  /* padding: 10px; */
   text-align: center;
   padding-bottom: 50px;
 }
