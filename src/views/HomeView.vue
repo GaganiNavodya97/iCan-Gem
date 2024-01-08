@@ -1,5 +1,5 @@
 <template>
-  
+  <AppLayout/>
   <vCarousel :slidesData="gemData"/>
   <NewsArticles />
   <vCarousel :slidesData="ringData"/>
@@ -18,13 +18,14 @@ import ring1 from '@/assets/images/ring1.png'
 import ring2 from '@/assets/images/ring2.png'
 import ring3 from '@/assets/images/ring3.png'
 import AppHeader from '@/layouts/AppHeader.vue';
+import AppLayout from '@/layouts/AppLayout.vue';
 
 
 
 
 export default {
   components:{
-    vCarousel, NewsArticles,
+    vCarousel, NewsArticles,AppLayout,
     AppHeader
 },
   name: "HomeView",
