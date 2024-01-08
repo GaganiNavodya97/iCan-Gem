@@ -41,7 +41,7 @@
                   <a href="#" class="hover:underline">{{ $t('footer.legalNprivacy') }}</a>
                 </li>
                 <li class="mb-4">
-                  <a href="#" class="hover:underline">{{ $t('footer.Returns') }}</a>
+                  <a href="#" class="hover:underline">{{ $t('footer.returns') }}</a>
                 </li>
               </ul>
             </div>
@@ -99,7 +99,7 @@
                 <a href="#" class="hover:underline">{{ $t('footer.legalNprivacy') }}</a>
               </li>
               <li class="mb-4">
-                <a href="#" class="hover:underline">{{ $t('footer.Returns') }}</a>
+                <a href="#" class="hover:underline">{{ $t('footer.returns') }}</a>
               </li>
             </ul>
           </div>
