@@ -27,10 +27,21 @@
         <template #addons>
           <Navigation>
             <template #next>
-              <span class="nav_icon"> > </span>
+
+              <!-- <div class="nav-button-container">
+                <img src="@/assets/icons/arrow-right.svg" alt="move right" class="w-7 h-7 nav_icon" />
+              </div> -->
+
+
+
+              <!-- <img src="@/assets/icons/ellipse.svg" alt="move right" class="w-7 h-7 nav_icon" /> -->
+
+              <img src="@/assets/icons/arrow-right.svg" alt="move right" class="w-7 h-7 nav_icon" />
+              <!-- <span class="nav_icon"> > </span> -->
             </template>
             <template #prev>
-               <span class="nav_icon"> < </span>
+              <img src="@/assets/icons/arrow-left.svg" alt="move left" class="w-7 h-7" />
+              <!-- <span class="nav_icon"> < </span> -->
            </template>
           </Navigation>
           <pagination />
@@ -42,14 +53,15 @@
   
   <script>
 import { Carousel, Slide, Navigation, Pagination } from 'vue3-carousel'
-import 'vue3-carousel/dist/carousel.css'
+import 'vue3-carousel/dist/carousel.css';
 
 export default {
   components: {
     Carousel,
     Slide,
     Navigation,
-    Pagination
+    Pagination,
+
   },
   props: {
     slidesData: {
@@ -76,15 +88,29 @@ export default {
 
 .carousel__prev,
 .carousel__next {
-  background-color: #fafafa;
-  padding: 30px;
+  background-color: #FAFAFA;
+  /* padding: px; */
   border-radius: 50%;
 }
 
-.nav_icon{
+/* .nav_icon{
   font-size: 60px;
   font-weight: 100;
   color: #ADADAD;
+} */
+
+/* .nav-icon {
+  width: 24px;
+  height: 24px;
+} */
+
+.nav-button-container {
+  background-image: url('@/assets/icons/ellipse.svg');
+  width: 10rem;  
+  height: 10rem; 
+  /* display: flex;
+  justify-content: center;
+  align-items: center; */
 }
 
 .carousel__prev {
