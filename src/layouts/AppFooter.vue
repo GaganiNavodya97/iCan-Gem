@@ -11,7 +11,7 @@
           <div class="grid grid-cols-2 gap-8 px-4 py-6 lg:py-8">
             <div>
               <h2 class="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white">
-                GET IN TOUCH
+                {{ $t('footer.getInTouch') }}
               </h2>
               <ul class="text-gray-500 dark:text-gray-400 font-medium">
                 <li class="mb-4">
@@ -27,20 +27,20 @@
             </div>
             <div class="ml-6">
               <h2 class="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white">
-                CUSOMER CARE
+                {{ $t('footer.customerCare') }}
               </h2>
               <ul class="text-gray-500 dark:text-gray-400 font-medium">
                 <li class="mb-4">
-                  <a href="#" class="hover:underline">Certificates</a>
+                  <a href="#" class="hover:underline">{{ $t('footer.certificates') }}</a>
                 </li>
                 <li class="mb-4">
-                  <a href="#" class="hover:underline">FAQ</a>
+                  <a href="#" class="hover:underline">{{ $t('footer.faq') }}</a>
                 </li>
                 <li class="mb-4">
-                  <a href="#" class="hover:underline">Legal & Privacy</a>
+                  <a href="#" class="hover:underline">{{ $t('footer.legalNprivacy') }}</a>
                 </li>
                 <li class="mb-4">
-                  <a href="#" class="hover:underline">Returns</a>
+                  <a href="#" class="hover:underline">{{ $t('footer.Returns') }}</a>
                 </li>
               </ul>
             </div>
@@ -48,7 +48,7 @@
 
           <div class="flex flex-col justify-center items-center">
             <div class="text-center mb-3">
-              <h2 class="text-sm font-semibold text-gray-900 dark:text-white">FOLLOW US</h2>
+              <h2 class="text-sm font-semibold text-gray-900 dark:text-white">{{ $t('footer.followus') }}</h2>
             </div>
             <div class="flex justify-center gap-4 mb-6">
               <a href="#" class="w-7 h-7">
@@ -68,7 +68,7 @@
         <div class="hidden md:grid gap-8 px-4 py-6 lg:py-8 md:grid-cols-3">
           <div>
             <h2 class="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white">
-              GET IN TOUCH
+              {{ $t('footer.getInTouch') }}
             </h2>
             <ul class="text-gray-500 dark:text-gray-400 font-medium">
               <li class="mb-4">
@@ -84,26 +84,26 @@
           </div>
           <div>
             <h2 class="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white">
-              CUSOMER CARE
+              {{ $t('footer.customerCare') }}
             </h2>
             <ul class="text-gray-500 dark:text-gray-400 font-medium">
               <li class="mb-4">
-                <a href="#" class="hover:underline">Certificates</a>
+                <a href="#" class="hover:underline">{{ $t('footer.certificates') }}</a>
               </li>
               <li class="mb-4">
-                <a href="#" class="hover:underline">FAQ</a>
+                <a href="#" class="hover:underline">{{ $t('footer.faq') }}</a>
               </li>
               <li class="mb-4">
-                <a href="#" class="hover:underline">Legal & Privacy</a>
+                <a href="#" class="hover:underline">{{ $t('footer.legalNprivacy') }}</a>
               </li>
               <li class="mb-4">
-                <a href="#" class="hover:underline">Returns</a>
+                <a href="#" class="hover:underline">{{ $t('footer.Returns') }}</a>
               </li>
             </ul>
           </div>
           <div class="">
             <h2 class="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white">
-              FOLLOW US
+              {{ $t('footer.followus') }}
             </h2>
             <div class="flex">
               <a href="#">
@@ -125,7 +125,7 @@
         <!-- for small screens -->
         <div class="text-gray-600 text-xs py-3 px-2 mt-2 second-div md:hidden">
           <div class="pl-1">
-            SHIPPING TO :
+            {{ $t('footer.shipping') }}
             <select class="text-gray-700">
               <option v-for="country in countries" :key="country">{{ country }}</option>
             </select>
@@ -138,17 +138,17 @@
               </select>
             </div>
 
-            <div class="text-gray-600 text-right mt-2">ALL RIGHTS RESERVED ©GEMSTAR | 2024</div>
+            <div class="text-gray-600 text-right mt-2">{{ $t('footer.copyright') }}</div>
           </div>
         </div>
 
         <!-- for medium and above -->
         <div
           class="hidden md:grid grid-cols-2 gap-8 text-gray-600 text-sm py-3 px-2 my-2 first-div">
-          <div class="text-gray-600">ALL RIGHTS RESERVED ©GEMSTAR | 2024</div>
+          <div class="text-gray-600">{{ $t('footer.copyright') }}</div>
           <div class="flex ml-6">
             <div class="text-gray-600 text-sm">
-              SHIPPING TO :
+              {{ $t('footer.shipping') }}
               <select class="text-gray-700 text-sm">
                 <option v-for="country in countries" :key="country">{{ country }}</option>
               </select>
@@ -173,7 +173,7 @@ export default {
     return {
       countries: ['Sri Lanka', 'UK'],
       country: 'Sri Lanka',
-      lanuages: ['English', 'Chinese']
+      lanuages: [this.$t('Languages.en'), this.$t('Languages.zn'), this.$t('Languages.ko')]
     }
   },
   props: {},
