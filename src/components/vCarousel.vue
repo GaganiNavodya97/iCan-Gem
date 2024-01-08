@@ -31,11 +31,7 @@
               <!-- <div class="nav-button-container">
                 <img src="@/assets/icons/arrow-right.svg" alt="move right" class="w-7 h-7 nav_icon" />
               </div> -->
-
-
-
               <!-- <img src="@/assets/icons/ellipse.svg" alt="move right" class="w-7 h-7 nav_icon" /> -->
-
               <img src="@/assets/icons/arrow-right.svg" alt="move right" class="w-7 h-7 nav_icon" />
               <!-- <span class="nav_icon"> > </span> -->
             </template>
@@ -86,12 +82,11 @@ export default {
 
 <style lang="css">
 
-.carousel__prev,
+/* .carousel__prev,
 .carousel__next {
   background-color: #FAFAFA;
-  /* padding: px; */
   border-radius: 50%;
-}
+} */
 
 /* .nav_icon{
   font-size: 60px;
@@ -104,14 +99,14 @@ export default {
   height: 24px;
 } */
 
-.nav-button-container {
+/* .nav-button-container {
   background-image: url('@/assets/icons/ellipse.svg');
   width: 10rem;  
   height: 10rem; 
-  /* display: flex;
+  display: flex;
   justify-content: center;
-  align-items: center; */
-}
+  align-items: center;
+} */
 
 .carousel__prev {
   left: -45px;

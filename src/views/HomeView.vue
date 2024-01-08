@@ -9,14 +9,17 @@
 import vCarousel from '@/components/vCarousel.vue';
 import NewsArticles from '@/components/LandingPage/NewsArticles.vue';
 
-import image1 from '@/assets/images/pngwing1.png'
-import image2 from '@/assets/images/pngwing2.png'
-import image3 from '@/assets/images/pngwing3.png'
+import aquamarine from '@/assets/images/gems/aquamarine.webp'
+import Chrysoberyl from '@/assets/images/gems/Chrysoberyl.webp'
+import blueSapphire from '@/assets/images/gems/blueSapphire.webp'
+import emerald from '@/assets/images/gems/emerald.webp'
+import tsavorite from '@/assets/images/gems/tsavorite.webp'
+import ruby from '@/assets/images/gems/ruby.png'
 
+import rubyRings from '@/assets/images/rings/rubyRings.webp'
+import sapphireRings from '@/assets/images/rings/sapphireRings.webp'
+import tsavoriteRings from '@/assets/images/rings/tsavoriteRings.webp'
 
-import ring1 from '@/assets/images/ring1.png'
-import ring2 from '@/assets/images/ring2.png'
-import ring3 from '@/assets/images/ring3.png'
 
 
 
@@ -31,36 +34,51 @@ export default {
     return {
       gemData: [
         {
-          name: this.$t('gemsFavoriteSection.chrysoberyl.title'),
-          image: image1,
-          description: this.$t('gemsFavoriteSection.chrysoberyl.description'),
+          name: this.$t('gemsFavoriteSection.Chrysoberyl.title'),
+          image: Chrysoberyl,
+          description: this.$t('gemsFavoriteSection.Chrysoberyl.description'),
         },
         {
-          name: this.$t('gemsFavoriteSection.ruby.title'),
-          image: image2,
-          description: this.$t('gemsFavoriteSection.ruby.description'),
+          name: this.$t('gemsFavoriteSection.Sapphire.title'),
+          image: blueSapphire,
+          description: this.$t('gemsFavoriteSection.Sapphire.description'),
         },
         {
-          name: this.$t('gemsFavoriteSection.reridot.title'),
-          image: image3,
-          description: this.$t('gemsFavoriteSection.reridot.description'),
+          name: this.$t('gemsFavoriteSection.Aquamarine.title'),
+          image: aquamarine,
+          description: this.$t('gemsFavoriteSection.Aquamarine.description'),
+        },
+        {
+          name: this.$t('gemsFavoriteSection.Emerald.title'),
+          image: emerald,
+          description: this.$t('gemsFavoriteSection.Emerald.description'),
+        },
+        {
+          name: this.$t('gemsFavoriteSection.Tsavorite.title'),
+          image: tsavorite,
+          description: this.$t('gemsFavoriteSection.Tsavorite.description'),
+        },
+        {
+          name: this.$t('gemsFavoriteSection.Ruby.title'),
+          image: ruby,
+          description: this.$t('gemsFavoriteSection.Ruby.description'),
         },
       ],
       ringData: [
         {
-          name: this.$t('juweliersFavoriteSection.chrysoberyl.title'),
-          image: ring1,
-          description: this.$t('juweliersFavoriteSection.chrysoberyl.description'),
+          name: this.$t('juweliersFavoriteSection.RubyRings.title'),
+          image: rubyRings,
+          description: this.$t('juweliersFavoriteSection.RubyRings.description'),
         },
         {
-          name: this.$t('juweliersFavoriteSection.ruby.title'),
-          image: ring2,
-          description: this.$t('juweliersFavoriteSection.ruby.description'),
+          name: this.$t('juweliersFavoriteSection.SapphireRings.title'),
+          image: sapphireRings,
+          description: this.$t('juweliersFavoriteSection.SapphireRings.description'),
         },
         {
-          name: this.$t('juweliersFavoriteSection.reridot.title'),
-          image: ring3,
-          description: this.$t('juweliersFavoriteSection.reridot.description'),
+          name: this.$t('juweliersFavoriteSection.TsavoriteRings.title'),
+          image: tsavoriteRings,
+          description: this.$t('juweliersFavoriteSection.TsavoriteRings.description'),
         }
       ]
     };
