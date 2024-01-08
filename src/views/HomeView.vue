@@ -1,13 +1,16 @@
 <template>
-  
+  <AppHeader/>
+  <AppLayout/>
   <vCarousel :slidesData="gemData"/>
   <NewsArticles />
+  <Helps/>
   <vCarousel :slidesData="ringData"/>
 
 </template>
 <script>
 import vCarousel from '@/components/vCarousel.vue';
 import NewsArticles from '@/components/LandingPage/NewsArticles.vue';
+import Helps from '@/components/LandingPage/QuestionHelp.vue'
 
 import aquamarine from '@/assets/images/gems/aquamarine.webp'
 import Chrysoberyl from '@/assets/images/gems/Chrysoberyl.webp'
@@ -24,10 +27,13 @@ import tsavoriteRings from '@/assets/images/rings/tsavoriteRings.webp'
 
 
 
+
 export default {
   components:{
-    vCarousel,NewsArticles
-  },
+    vCarousel, NewsArticles,AppLayout,
+    AppHeader,
+    Helps
+},
   name: "HomeView",
   created() {},
   data() {
