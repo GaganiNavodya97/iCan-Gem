@@ -106,6 +106,16 @@
 		"legalNprivacy":"法律与隐私，",
 		"returns":"返回，",
 		"followus":"关注",
-		"getInTouch":"联系我们"
+		"getInTouch":"联系我们",
+		"shipping":"运到:",
+		"copyright":"ALL RIGHTS RESERVED © GEMSTAR | 2024",
+		"Languages":{
+		  "en" :"English",
+		  "zn" :"Chinese",
+		  "ko" :"Korean"
+		},
+		"country":{
+		  "sl":"Sri Lanka"
+		}
 	}
   }

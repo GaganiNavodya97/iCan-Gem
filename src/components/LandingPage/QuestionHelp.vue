@@ -77,7 +77,7 @@ export default {
 .image-container
   width: 50%
   @media (max-width: 900px)
-    dispaly: none
+  display: none
 .header-container
   text-align: left
   max-width: 1336px

@@ -21,8 +21,9 @@ async function loadLocaleMessages() {
 
 // Initialize Vue I18n with loaded messages
 async function initI18n() {
+  const browserLanguage = navigator.language.split('-')[0];
   const i18n = createI18n({
-    locale: 'en', // Default locale
+    locale: browserLanguage, // Default locale
     fallbackLocale: import.meta.env.VITE_APP_I18N_FALLBACK_LOCALE || 'en',
     messages: await loadLocaleMessages(), // Await loading of messages
   });
