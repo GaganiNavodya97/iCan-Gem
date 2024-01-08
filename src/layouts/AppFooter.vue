@@ -14,14 +14,15 @@
                 {{ $t('footer.getInTouch') }}
               </h2>
               <ul class="text-gray-500 dark:text-gray-400 font-medium">
-                <li class="mb-4">
+                <!-- <li class="mb-4">
                   <a href="#" class="hover:underline">aurora@gmail.com</a>
-                </li>
-                <li class="mb-4">
+                </li> -->
+                <!-- <li class="mb-4">
                   <a href="#" class="hover:underline">+1 (234) 567 89 00</a>
-                </li>
+                </li> -->
                 <li class="mb-4 leading-5">
-                  <a href="#" class="hover:underline">310 E 67th St, New York, NY 10065, USA</a>
+                  <a href="#" class="hover:underline">iCan Lanka (Private) Ltd
+                    #422, 13th Floor, R A De Mel Mawatha, Colombo 03. Sri Lanka</a>
                 </li>
               </ul>
             </div>
@@ -71,14 +72,15 @@
               {{ $t('footer.getInTouch') }}
             </h2>
             <ul class="text-gray-500 dark:text-gray-400 font-medium">
-              <li class="mb-4">
+              <!-- <li class="mb-4">
                 <a href="#" class="hover:underline">aurora@gmail.com</a>
-              </li>
-              <li class="mb-4">
+              </li> -->
+              <!-- <li class="mb-4">
                 <a href="#" class="hover:underline">+1 (234) 567 89 00</a>
-              </li>
+              </li> -->
               <li class="mb-4">
-                <a href="#" class="hover:underline">310 E 67th St, New York, NY 10065, USA</a>
+                <a href="#" class="hover:underline">iCan Lanka (Private) Ltd
+                  #422, 13th Floor, R A De Mel Mawatha, Colombo 03. Sri Lanka</a>
               </li>
             </ul>
           </div>
@@ -173,7 +175,7 @@ export default {
     return {
       countries: ['Sri Lanka', 'UK'],
       country: 'Sri Lanka',
-      lanuages: [this.$t('Languages.en'), this.$t('Languages.zn'), this.$t('Languages.ko')]
+      lanuages: [this.$t('footer.Languages.en'), this.$t('footer.Languages.zn'), this.$t('footer.Languages.ko')]
     }
   },
   props: {},
