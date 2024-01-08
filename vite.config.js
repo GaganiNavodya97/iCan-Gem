@@ -1,12 +1,17 @@
-import { fileURLToPath, URL } from 'node:url'
+// vite.config.js
+import { fileURLToPath, URL } from 'node:url';
 
-import { defineConfig } from 'vite'
-import vue from '@vitejs/plugin-vue'
+import { defineConfig } from 'vite';
+import vue from '@vitejs/plugin-vue';
+import babel from '@rollup/plugin-babel';
 
-// https://vitejs.dev/config/
+// Get the directory name from the URL
+const __dirname = fileURLToPath(new URL('.', import.meta.url));
+
 export default defineConfig({
   plugins: [
     vue(),
+    babel({ babelHelpers: 'bundled', exclude: 'node_modules/**' }),
   ],
   resolve: {
     alias: {
@@ -23,4 +28,12 @@ export default defineConfig({
   define: {
     "process.env": {},
   },
-})
+  target: 'chrome88',
+
+  // Add the __dirname workaround for CommonJS modules
+  server: {
+    fs: {
+      allow: [__dirname],
+    },
+  },
+});

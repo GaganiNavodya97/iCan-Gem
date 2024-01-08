@@ -20,12 +20,17 @@ async function loadLocaleMessages() {
 }
 
 // Initialize Vue I18n with loaded messages
-const i18n = await createI18n({
-  locale: 'en', // Default locale
-  fallbackLocale: import.meta.env.VITE_APP_I18N_FALLBACK_LOCALE || 'en',
-  messages: await loadLocaleMessages(), // Await loading of messages
-});
+async function initI18n() {
+  const i18n = createI18n({
+    locale: 'en', // Default locale
+    fallbackLocale: import.meta.env.VITE_APP_I18N_FALLBACK_LOCALE || 'en',
+    messages: await loadLocaleMessages(), // Await loading of messages
+  });
 
-export default i18n;
+  return i18n;
+}
+
+export default initI18n;
+
 
 
