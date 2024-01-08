@@ -5,10 +5,10 @@
       <div class="fonts text-xs">JEWELLERY & GEMS</div>
       <div class="sub-fonts text-4xl mt-2 mb-[7px]">Shine Bright</div>
       <span class="sub-fonts text-4xl mt-3">With GEM STAR</span>
-      <div class="text text-base mt-3">Everyday is your special day with our jewellery !</div>
+      <div class="text text-base mb-2">Everyday is your special day with our jewellery !</div>
   
       <button
-              class="flex items-center justify-center bg-[#DFAC93] hover:bg-[#e2a789] text-[#F6F4F2]  py-3 px-4 rounded-sm mt-3"
+              class="flex items-center justify-center bg-[#DFAC93] hover:bg-[#e2a789] text-[#F6F4F2]  py-3 px-4 rounded-sm mb-2"
             >
               <div class="w-5 h-1 mr-2 bg-[#F6F4F2] btn-font"></div>
   
@@ -26,17 +26,19 @@
               <div class="fonts text-xl">JEWELLERY & GEMS</div>
               <div class="sub-fonts text-6xl">Shine Bright</div>
               <span class="sub-fonts text-6xl sm:tracking-normal">With GEM STAR</span>
-              <div class="text text-xl mt-10">Everyday is your special day with our jewellery</div>
+              <div class="text text-xl">Everyday is your special day with our jewellery</div>
           </div>
   
           <img src="../assets/header-icons/image.png" class="object-cover" />
   
-          <div class="justify-center items-center sm:items-end sm:justify-end sm:pl-10">
+          <div class="justify-center items-center sm:items-end sm:justify-end sm:pl-10 mb-2">
               <button class="flex items-center justify-center bg-[#DFAC93] hover:bg-[#e2a789] text-white font-bold py-3 px-4 rounded-sm">
                   <div class="w-5 h-1 mr-2 bg-[#F6F4F2]"></div>
                   Shop
               </button>
+              <!-- <div class="mb-2"></div> -->
           </div>
+        
       </div>
   </div>
   
