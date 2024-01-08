@@ -7,8 +7,8 @@
         :breakpoints="breakpoints"
         :itemsToShow="2"
         :wrapAround="true"
-        :transition=500
-        :autoplay=3000
+        :transition="500"
+        :autoplay="3000"
         pauseAutoplayOnHover
         class="gem-carousel"
       >
@@ -25,7 +25,7 @@
           </div>
         </Slide>
         <template #addons>
-          <Navigation > 
+          <Navigation>
             <!-- <template #next>
               <span> >> </span>
             </template>
@@ -43,7 +43,6 @@
   <script>
 import { Carousel, Slide, Navigation, Pagination } from 'vue3-carousel'
 import 'vue3-carousel/dist/carousel.css'
-
 
 export default {
   components: {
@@ -67,7 +66,7 @@ export default {
           snapAlign: 'center'
         }
       },
-      data: this.slidesData,
+      data: this.slidesData
     }
   }
 }
@@ -86,8 +85,8 @@ export default {
 
 .carousel__prev,
 .carousel__next {
-	/* border: 5px solid white; */
-	background-color: #FAFAFA;
+  /* border: 5px solid white; */
+  background-color: #fafafa;
   padding: 5px;
   /* margin: 100px; */
   border-radius: 50%;
@@ -195,11 +194,12 @@ export default {
 }
 
 @media (max-width: 768px) {
-
-  .carousel__navigation, .carousel__next, .carousel__prev {
+  .carousel__navigation,
+  .carousel__next,
+  .carousel__prev {
     display: none;
   }
-  
+
   .carousel__pagination {
     margin: 12px 0px;
     display: flex;
