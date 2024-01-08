@@ -1,4 +1,5 @@
 <template>
+  <AppHeader/>
   <AppLayout/>
   <vCarousel :slidesData="gemData"/>
   <NewsArticles />
@@ -19,6 +20,7 @@ import ring2 from '@/assets/images/ring2.png'
 import ring3 from '@/assets/images/ring3.png'
 import AppHeader from '@/layouts/AppHeader.vue';
 import AppLayout from '@/layouts/AppLayout.vue';
+
 
 
 
