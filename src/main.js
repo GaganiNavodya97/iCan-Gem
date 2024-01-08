@@ -9,6 +9,7 @@ import {getItem, setItem} from "./libraries/Storage";
 import "vuestic-ui/css";
 
 
+
 const pinia = createPinia()
 app.config.globalProperties.$storageSetItem = setItem;
 app.config.globalProperties.$storageGetItem = getItem;
