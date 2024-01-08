@@ -1,9 +1,110 @@
 {
-    "header":{
-        "logIn":"Sign In",
-        "SL":"Sri Lanka",
-        "China":"China",
-        "Laos":"Laos",
-        "Turkiye":"Turkiye"
+
+  "menuBar":{
+    "Collection":"Collection",
+    "ContactUs":"Contact Us"
+  },
+  "hereSection":{
+      "title_1":"JEWELRY & GEMS",
+      "title_2":"Shine Bright With GEM STAR",
+      "title_3":"Every day is your special day with our fine jewelry!",
+      "shop":"Shop"
+  },
+  "gemsFavoriteSection":{
+      "title":"Choose Your Favorites.",
+      "learnMore":"Learn More",
+      "chrysoberyl":{
+          "title":"Sapphire Gems Stone",
+          "description":"Sapphire refers to the blue variety of corundum, when used alone. Fancy colored sapphires appear in a wide range of colors, including vivid yellow, orange and pink."
+      },
+      "ruby":{
+          "title":"Ruby Gems Stone",
+          "description":"Ruby stands for love, courage, emotion, and interest. For centuries, this gem has been considered the king of all gemstones."
+      },
+      "reridot":{
+          "title":"Aquamarine Gems Stone",
+          "description":"Found in green-blue to blue colour variations, aquamarine crystals get the blue tone due to the presence of iron within the crystal."
       }
+  },
+  "gemsNewColection":{
+      "heading_1":"NEW IN",
+      "heading_2":"New Collection.",
+      "description":"Shine bright in our new 2024 collection of fine jewelry!",
+      "earnings":"Earnings",
+      "rings":"Rings",
+      "necklaces":"Necklaces"
+  },
+  "juweliersFavoriteSection":{
+      "title":"Choose Your Favorites.",
+      "learnMore":"Learn More",
+      "chrysoberyl":{
+          "title":"Chrysoberyl Gems Stone",
+          "description":"The chrysoberyl group is perhaps most famous for its cat's eye gemstone variety, but the rarest and most valuable chrysoberyl is alexandrite."
+      },
+      "ruby":{
+          "title":"Emerald Gems Stone",
+          "description":"Emerald is the green to greenish blue variety of the mineral Beryl. Top fine quality Emerald Gems are even more valuable than diamonds."
+      },
+      "reridot":{
+          "title":"Tsavorite Gems Stone",
+          "description":"An emerald-green variety of grossular garnet, tsavorite is one of the most popular and expensive varieties of garnet. Suitable for any type of jewelry"
+      }
+  },
+  "juweliersNewColection":{
+      "heading_1":"NEW IN",
+      "heading_2":"New Collection.",
+      "description":"Shine bright in our new 2024 collection of fine jewelry!",
+      "earnings":"Earnings",
+      "rings":"Rings",
+      "necklaces":"Necklaces"
+  },
+  "blog":{
+      "blog":"Blog",
+      "heading_1":"Our News and Articles.",
+      "heading_2":"Check out our latest articles to learn more about our brand and get tips on jewelry care.",
+      "readMore":"READ MORE",
+      "blog_01":{
+          "title":"The Most Romantic Picks",
+          "description":"Valentine's Day is approaching! If you have not yet decided on your outfit, we have picked the best jewelry sets that will look..."
+      },
+      "blog_02":{
+          "title":"Welcome a New Hot Trend",
+          "description":"Valentine's Day is approaching! If you have not yet decided on your outfit, we have picked the best jewelry sets that will look..."
+      },
+      "blog_03":{
+          "title":"Jewelry for Business Styles",
+          "description":"Valentine's Day is approaching! If you have not yet decided on your outfit, we have picked the best jewelry sets that will look..."
+      }
+  },
+  "faq":{
+      "faq":"FAQ",
+      "needHelp":"Need Help?",
+      "description":"If you have any questions, feel free to contact us in any convenient way.",
+      "shipTo":"Where do you ship to?",
+      "makeOrder":"How can I make the order?",
+      "changeOrder":"Can I change my order after it is placed?",
+      "offline":"Do you have offline stores?",
+      "cancelOrder":"Can I cancel my order?"
+  },
+  "footer":{
+      "customerCare":"CUSTOMER CARE",
+      "certificates":"Certificates",
+      "faq":"FAQ",
+      "legalNprivacy":"Legal & Privacy",
+      "returns":"Returns",
+      "followus":"FOLLOW US",
+      "getInTouch":"GET IN TOUCH",
+      "shipping":"SHIPPING TO:",
+      "copyright":"ALL RIGHTS RESERVED © GEMSTAR | 2024",
+      "Languages":{
+        "en" :"English",
+        "zn" :"Chinese",
+        "ko" :"Korean"
+      },
+      "country":{
+        "sl":"Sri Lanka"
+      }
+  }
+
+
 }

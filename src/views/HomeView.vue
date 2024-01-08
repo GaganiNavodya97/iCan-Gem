@@ -31,42 +31,36 @@ export default {
     return {
       gemData: [
         {
-          name: 'Chrysoberyl Gems Stone',
+          name: this.$t('gemsFavoriteSection.chrysoberyl.title'),
           image: image1,
-          description:
-            "The chrysoberyl group is perhaps most famous for its cat's eye gemstone variety, but the rarest and most valuable chrysoberyl is alexandrite"
+          description: this.$t('gemsFavoriteSection.chrysoberyl.description'),
         },
         {
-          name: 'Ruby Gems Stone',
+          name: this.$t('gemsFavoriteSection.ruby.title'),
           image: image2,
-          description:
-            'Ruby stands for love, courage, emotions, and interest.For centuries, this gem has been considered the king of all gemstones.'
+          description: this.$t('gemsFavoriteSection.ruby.description'),
         },
         {
-          name: 'Peridot Gems Stone',
+          name: this.$t('gemsFavoriteSection.reridot.title'),
           image: image3,
-          description:
-            'Found in green-blue to blue colour variations, aquamarine crystals get the blue tone due to the presence of iron within the crystal'
+          description: this.$t('gemsFavoriteSection.reridot.description'),
         },
       ],
       ringData: [
         {
-          name: 'Peridot Gems Stone',
+          name: this.$t('juweliersFavoriteSection.chrysoberyl.title'),
           image: ring1,
-          description:
-            'Ruby stands for love, courage, emotions, and interest.For centuries, this gem has been considered the king of all gemstones.'
+          description: this.$t('juweliersFavoriteSection.chrysoberyl.description'),
         },
         {
-          name: 'Peridot Gems Stone',
+          name: this.$t('juweliersFavoriteSection.ruby.title'),
           image: ring2,
-          description:
-            'Ruby stands for love, courage, emotions, and interest.For centuries, this gem has been considered the king of all gemstones.'
+          description: this.$t('juweliersFavoriteSection.ruby.description'),
         },
         {
-          name: 'Chrysoberyl Gems Stone',
+          name: this.$t('juweliersFavoriteSection.reridot.title'),
           image: ring3,
-          description:
-            'Ruby stands for love, courage, emotions, and interest.For centuries, this gem has been considered the king of all gemstones.'
+          description: this.$t('juweliersFavoriteSection.reridot.description'),
         }
       ]
     };

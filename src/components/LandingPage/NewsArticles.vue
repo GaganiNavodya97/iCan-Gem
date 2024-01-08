@@ -1,9 +1,9 @@
 <template>
   <div class="news-container">
   <div class="header">
-    <div class="heading">BLOG</div>
-    <div class="main-heading">Our News and Articles.</div>
-    <div class="heading-discription">Check out our latest articles to learn more about our brand and get tips on jewelry care.</div>
+    <div class="heading">{{ $t('blog.blog') }}</div>
+    <div class="main-heading">{{ $t('blog.heading_1') }}</div>
+    <div class="heading-discription">{{ $t('blog.heading_2') }}</div>
   </div>
   <section class="text-gray-600 body-font">
     <div class="container px-5 py-10 mx-auto">
@@ -12,11 +12,10 @@
           <div class="h-full border-2 overflow-hidden">
             <img class="lg:h-96 md:h-36 w-full object-cover object-center" :src="News3" alt="blog">
             <div class="py-6">
-              <h2 class="tracking-widest text-xs title-font font-medium text-gray-400 mb-1 topic">CATEGORY</h2>
-              <h1 class="text-2xl font-medium text-gray-900 mb-3 main-topc">The Most Romantic Picks</h1>
-              <p class="leading-relaxed text-zinc-600 mb-3 para">Valentine's Day is approaching! If you have not yet decided on your outfit, we have picked the best jewelry sets that will look...</p>
+              <h1 class="text-2xl font-medium text-gray-900 mb-3 main-topc">{{ $t('blog.blog_01.title') }}</h1>
+              <p class="leading-relaxed text-zinc-600 mb-3 para">{{ $t('blog.blog_01.description') }}</p>
               <div class="flex items-center flex-wrap see-more-button">
-                <div class="inline-flex items-center md:mb-2 lg:mb-0">READ MORE
+                <div class="inline-flex items-center md:mb-2 lg:mb-0">{{ $t('blog.readMore') }}
                   <div class="line"></div>
                 </div>
               </div>
@@ -27,11 +26,10 @@
           <div class="h-full border-2 border-gray-200 border-opacity-60 rounded-lg overflow-hidden">
             <img class="lg:h-96 md:h-36 w-full object-cover object-center" :src="News2" alt="blog">
             <div class="py-6">
-              <h2 class="tracking-widest text-xs title-font font-medium mb-1 topic">CATEGORY</h2>
-              <h1 class="text-2xl font-medium  mb-3 main-topc">Welcome a New Hot Trend</h1>
-              <p class="leading-relaxed text-zinc-600 mb-3 para">Valentine's Day is approaching! If you have not yet decided on your outfit, we have picked the best jewelry sets that will look...</p>
+              <h1 class="text-2xl font-medium  mb-3 main-topc">{{ $t('blog.blog_02.title') }}</h1>
+              <p class="leading-relaxed text-zinc-600 mb-3 para">{{ $t('blog.blog_02.description') }}</p>
               <div class="flex items-center flex-wrap see-more-button">
-                <div class="inline-flex items-center md:mb-2 lg:mb-0">READ MORE
+                <div class="inline-flex items-center md:mb-2 lg:mb-0">{{ $t('blog.readMore') }}
                   <div class="line"></div>
                 </div>
               </div>
@@ -42,11 +40,10 @@
           <div class="h-full border-2 border-gray-200 border-opacity-60 rounded-lg overflow-hidden">
             <img class="lg:h-96 md:h-36 w-full object-cover object-center" :src="News1">
             <div class="py-6">
-              <h2 class="tracking-widest text-xs title-font font-medium text-gray-400 mb-1 topic">CATEGORY</h2>
-              <h1 class="text-2xl font-medium text-gray-900 mb-3 main-topc">Jewelry for Business Styles</h1>
-              <p class="leading-relaxed text-zinc-600 mb-3 para">Some companies have strict dress code requirements, including accessories. Let's see what kind of jewelry you can still wear...</p>
+              <h1 class="text-2xl font-medium text-gray-900 mb-3 main-topc">{{ $t('blog.blog_02.title') }}</h1>
+              <p class="leading-relaxed text-zinc-600 mb-3 para">{{ $t('blog.blog_03.description') }}</p>
               <div class="flex items-center flex-wrap see-more-button">
-                <div class="inline-flex items-center md:mb-2 lg:mb-0">READ MORE
+                <div class="inline-flex items-center md:mb-2 lg:mb-0">{{ $t('blog.readMore') }}
                   <div class="line"></div>
                 </div>
               </div>
