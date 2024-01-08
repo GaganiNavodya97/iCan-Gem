@@ -49,17 +49,17 @@
 	"juweliersFavoriteSection":{
 		"title":"즐겨 찾기를 선택하십시오.",
 		"learnMore":"더 알아보기",
-		"chrysoberyl":{
-			"title":"Chrysoberyl Gems Stone",
-			"description":"Chrysoberyl Group은 아마도 고양이의 눈 보석 품종으로 가장 유명하지만 가장 희귀하고 가장 귀중한 Chrysoberyl은 Alexandrite입니다."
+		"SapphireRings":{
+			"title":"사파이어 반지",
+			"description":"결혼 반지와 약혼 반지를 포함한 화려한 사파이어 링은 Gem Star Collection에서 찾을 수 있습니다. 다이아몬드와 보석으로 설정된 다양한 색상의 사파이어."
 		},
-		"ruby":{
-			"title":"에메랄드 보석 석",
-			"description":"에메랄드는 미네랄 베릴의 녹색에서 녹색의 푸른 품종입니다. 최고의 고급 에메랄드 보석은 다이아몬드보다 훨씬 더 가치가 있습니다."
+		"RubyRings":{
+			"title":"루비 반지",
+			"description":"보석 스타에서 매혹적인 루비 반지를 탐험하십시오. 루비의 불 같은 매력, ​​열정과 사랑의 상징이 손가락에 시대를 초월한 진술을하도록하십시오."
 		},
-		"reridot":{
-			"title":"Tsavorite 보석 석",
-			"description":"에메랄드-그린 다양한 매트 넷, Tsavorite는 가장 인기 있고 값 비싼 종류의 가넷 중 하나입니다. 모든 유형의 보석에 적합합니다"
+		"TsavoriteRings":{
+			"title":"차보라이트 반지",
+			"description":"Tsavorite 고리의 주요 장점 중 하나는 비교할 수없는 아름다움입니다. Tsavorite는 에메랄드만큼 강렬한 녹색 그늘을 제공합니다."
 		}
 	},
 	"juweliersNewColection":{
