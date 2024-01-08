@@ -13,17 +13,29 @@
 	"gemsFavoriteSection":{
 		"title":"즐겨 찾기를 선택하십시오.",
 		"learnMore":"더 알아보기",
-		"chrysoberyl":{
+		"Sapphire":{
 			"title":"사파이어 보석 석",
 			"description":"사파이어는 단독으로 사용될 때 푸른 종류의 Corundum을 말합니다. 멋진 색상의 사파이어는 생생한 노란색, 주황색 및 분홍색을 포함한 다양한 색상으로 나타납니다."
 		},
-		"ruby":{
+		"Ruby":{
 			"title":"루비 보석 스톤",
 			"description":"루비는 사랑, 용기, 감정 및 관심을 나타냅니다. 수세기 동안,이 보석은 모든 보석의 왕으로 여겨져 왔습니다."
 		},
-		"reridot":{
+		"Aquamarine":{
 			"title":"아쿠아 마린 보석 석",
 			"description":"녹색 파란색에서 푸른 색 변동에서 발견되는 Aquamarine 결정은 결정 내에서 철의 존재로 인해 푸른 색조를 얻습니다."
+		},
+		"Chrysoberyl":{
+			"title":"Chrysoberyl Gems Stone",
+			"description":"Chrysoberyl Group은 아마도 고양이의 눈 보석 품종으로 가장 유명하지만 가장 희귀하고 가장 귀중한 Chrysoberyl은 Alexandrite입니다."
+		},
+		"Emerald":{
+			"title":"에메랄드 보석 석",
+			"description":"에메랄드는 미네랄 베릴의 녹색에서 녹색의 푸른 품종입니다. 최고의 고급 에메랄드 보석은 다이아몬드보다 훨씬 더 가치가 있습니다."
+		},
+		"Tsavorite":{
+			"title":"Tsavorite 보석 석",
+			"description":"에메랄드-그린 다양한 매트 넷, Tsavorite는 가장 인기 있고 값 비싼 종류의 가넷 중 하나입니다. 모든 유형의 보석에 적합합니다"
 		}
 	},
 	"gemsNewColection":{
