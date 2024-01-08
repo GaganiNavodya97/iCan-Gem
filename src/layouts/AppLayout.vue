@@ -2,17 +2,16 @@
   <div class="relative bg-[#F6F4F2] sm:hidden">
     <img src="../assets/header-icons/image.png" class="w-full h-full object-cover sm:hidden opacity-30" />
     <div class="absolute top-0 left-0 p-4 sm:p-0"> <!-- Adjusted padding for better positioning -->
-      <div class="fonts text-xs">JEWELLERY & GEMS</div>
-      <div class="sub-fonts text-4xl mt-2 mb-[7px]">Shine Bright</div>
-      <span class="sub-fonts text-4xl mt-3">With GEM STAR</span>
-      <div class="text text-base mb-2">Everyday is your special day with our jewellery !</div>
+      <div class="fonts text-xs">{{ $t('hereSection.title_1') }}</div>
+      <div class="sub-fonts text-4xl mt-2 mb-[7px]">{{ $t('hereSection.title_2') }}</div>
+      <span class="sub-fonts text-4xl mt-3">{{ $t('hereSection.title_2Sub') }}</span>
+      <div class="text text-base mb-2">{{ $t('hereSection.title_3') }}</div>
   
       <button
               class="flex items-center justify-center bg-[#DFAC93] hover:bg-[#e2a789] text-[#F6F4F2]  py-3 px-4 rounded-sm mb-2"
             >
               <div class="w-5 h-1 mr-2 bg-[#F6F4F2] btn-font"></div>
-  
-              Shop
+              {{ $t('hereSection.shop') }}
             </button>
     </div>
   </div>
@@ -23,10 +22,10 @@
       <div class="grid grid-cols-1 sm:grid-cols-2">
           <!-- Content for the columns -->
           <div class="flex flex-col justify-center items-center sm:items-start sm:justify-start sm:pl-10 pt-5">
-              <div class="fonts text-xl">JEWELLERY & GEMS</div>
-              <div class="sub-fonts text-6xl">Shine Bright</div>
-              <span class="sub-fonts text-6xl sm:tracking-normal">With GEM STAR</span>
-              <div class="text text-xl">Everyday is your special day with our jewellery</div>
+              <div class="fonts text-xl">{{ $t('hereSection.title_1') }}</div>
+              <div class="sub-fonts text-6xl">{{ $t('hereSection.title_2') }}</div>
+              <span class="sub-fonts text-6xl sm:tracking-normal">{{ $t('hereSection.title_2Sub') }}</span>
+              <div class="text text-xl">{{ $t('hereSection.title_3') }}</div>
           </div>
   
           <img src="../assets/header-icons/image.png" class="object-cover" />
@@ -34,7 +33,7 @@
           <div class="justify-center items-center sm:items-end sm:justify-end sm:pl-10 mb-2">
               <button class="flex items-center justify-center bg-[#DFAC93] hover:bg-[#e2a789] text-white font-bold py-3 px-4 rounded-sm">
                   <div class="w-5 h-1 mr-2 bg-[#F6F4F2]"></div>
-                  Shop
+                  {{ $t('hereSection.shop') }}
               </button>
               <!-- <div class="mb-2"></div> -->
           </div>
