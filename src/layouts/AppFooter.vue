@@ -1,6 +1,6 @@
 <template>
   <div class="footer-container">
-    <footer class="bg-white dark:bg-gray-900">
+    <footer class="bg-white">
       <div class="mx-auto w-full max-w-screen-xl">
         <div class="text-center py-4">
           <img src="@/assets/images/logo/gemStarLogo.png" alt="Logo" class="mx-auto w-20 h-20" />
@@ -10,10 +10,10 @@
         <div class="md:hidden mb-4">
           <div class="grid grid-cols-2 gap-8 px-4 py-6 lg:py-8">
             <div>
-              <h2 class="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white">
+              <h2 class="mb-6 text-sm font-semibold text-gray-900 uppercase">
                 {{ $t('footer.getInTouch') }}
               </h2>
-              <ul class="text-gray-500 dark:text-gray-400 font-medium">
+              <ul class="text-gray-500 font-medium">
                 <!-- <li class="mb-4">
                   <a href="#" class="hover:underline">aurora@gmail.com</a>
                 </li> -->
@@ -21,16 +21,18 @@
                   <a href="#" class="hover:underline">+1 (234) 567 89 00</a>
                 </li> -->
                 <li class="mb-4 leading-6">
-                  <a href="#" class="hover:underline">iCan Lanka (Private) Ltd
-                    #422, 13th Floor, R A De Mel Mawatha, Colombo 03. Sri Lanka</a>
+                  <a href="#" class="hover:underline">iCan Lanka (Private) Ltd #422, 
+                    <br>13th Floor, R A De Mel Mawatha, 
+                    <br>Colombo 03. 
+                    <br>Sri Lanka</a>
                 </li>
               </ul>
             </div>
             <div class="ml-6">
-              <h2 class="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white">
+              <h2 class="mb-6 text-sm font-semibold text-gray-900 uppercase">
                 {{ $t('footer.customerCare') }}
               </h2>
-              <ul class="text-gray-500 dark:text-gray-400 font-medium">
+              <ul class="text-gray-500 font-medium">
                 <li class="mb-4">
                   <a href="#" class="hover:underline">{{ $t('footer.certificates') }}</a>
                 </li>
@@ -49,7 +51,7 @@
 
           <div class="flex flex-col justify-center items-center">
             <div class="text-center mb-3">
-              <h2 class="text-sm font-semibold text-gray-900 dark:text-white">{{ $t('footer.followus') }}</h2>
+              <h2 class="text-sm font-semibold text-gray-900">{{ $t('footer.followus') }}</h2>
             </div>
             <div class="flex justify-center gap-4 mb-6">
               <a href="#" class="w-7 h-7">
@@ -68,27 +70,29 @@
         <!-- for medium and above screens -->
         <div class="hidden md:grid gap-8 px-4 py-6 lg:py-8 md:grid-cols-3">
           <div>
-            <h2 class="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white">
+            <h2 class="mb-6 text-sm font-semibold text-gray-900 uppercase">
               {{ $t('footer.getInTouch') }}
             </h2>
-            <ul class="text-gray-500 dark:text-gray-400 font-medium">
+            <ul class="text-gray-500 font-medium">
               <!-- <li class="mb-4">
                 <a href="#" class="hover:underline">aurora@gmail.com</a>
               </li> -->
               <!-- <li class="mb-4">
                 <a href="#" class="hover:underline">+1 (234) 567 89 00</a>
               </li> -->
-              <li class="mb-4 leading-5">
-                <a href="#" class="hover:underline">iCan Lanka (Private) Ltd
-                  #422, 13th Floor, R A De Mel Mawatha, Colombo 03. Sri Lanka</a>
+              <li class="mb-4 leading-6">
+                <a href="#" class="hover:underline">iCan Lanka (Private) Ltd #422, 
+                  <br>13th Floor, R A De Mel Mawatha, 
+                  <br>Colombo 03. 
+                  <br>Sri Lanka</a>
               </li>
             </ul>
           </div>
           <div>
-            <h2 class="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white">
+            <h2 class="mb-6 text-sm font-semibold text-gray-900 uppercase">
               {{ $t('footer.customerCare') }}
             </h2>
-            <ul class="text-gray-500 dark:text-gray-400 font-medium">
+            <ul class="text-gray-500 font-medium">
               <li class="mb-4">
                 <a href="#" class="hover:underline">{{ $t('footer.certificates') }}</a>
               </li>
@@ -104,7 +108,7 @@
             </ul>
           </div>
           <div class="">
-            <h2 class="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white">
+            <h2 class="mb-6 text-sm font-semibold text-gray-900 uppercase">
               {{ $t('footer.followus') }}
             </h2>
             <div class="flex">
@@ -122,10 +126,10 @@
           </div>
         </div>
 
-        <hr />
+        <!-- <hr /> -->
 
         <!-- for small screens -->
-        <div class="text-gray-600 text-xs py-3 px-2 mt-2 second-div md:hidden">
+        <!-- <div class="text-gray-600 text-xs py-3 px-2 mt-2 second-div md:hidden">
           <div class="pl-1">
             {{ $t('footer.shipping') }}
             <select class="text-gray-700">
@@ -142,10 +146,10 @@
 
             <div class="text-gray-600 text-right mt-2">{{ $t('footer.copyright') }}</div>
           </div>
-        </div>
+        </div> -->
 
         <!-- for medium and above -->
-        <div
+        <!-- <div
           class="hidden md:grid grid-cols-2 gap-8 text-gray-600 text-sm py-3 px-2 my-2 first-div">
           <div class="text-gray-600">{{ $t('footer.copyright') }}</div>
           <div class="flex ml-6">
@@ -161,7 +165,7 @@
               </select>
             </div>
           </div>
-        </div>
+        </div> -->
       </div>
     </footer>
   </div>
