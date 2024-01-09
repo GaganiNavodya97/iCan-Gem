@@ -4,7 +4,13 @@ export default {
     "./src/**/*.{js,jsx,ts,tsx,vue}",
   ],
   theme: {
-    extend: {},
+    extend: {
+      fontFamily: {
+        'goudy': ['"Sorts Mill Goudy"', 'serif'],
+        'Montserrat': ['"Montserrat"', 'serif'],
+        'Myung': ['"Song Myung"', 'serif']
+      }
+    },
   },
   plugins: [],
 
