@@ -2,9 +2,12 @@
   <AppHeader/>
   <AppLayout/>
   <vCarousel :slidesData="gemData"/>
+  <AddToCart></AddToCart>
+  <vCarousel :slidesData="ringData"/>
+  <AddToCart></AddToCart>
   <NewsArticles />
   <Helps/>
-  <vCarousel :slidesData="ringData"/>
+  
 
 </template>
 <script>
@@ -13,6 +16,7 @@ import NewsArticles from '@/components/LandingPage/NewsArticles.vue';
 import Helps from '@/components/LandingPage/QuestionHelp.vue'
 import AppLayout from '@/layouts/AppLayout.vue'
 import AppHeader from '@/layouts/AppHeader.vue'
+import AddToCart from '@/components/addToCart.vue';
 
 import aquamarine from '@/assets/images/gems/aquamarine.webp'
 import Chrysoberyl from '@/assets/images/gems/Chrysoberyl.webp'
@@ -32,9 +36,12 @@ import tsavoriteRings from '@/assets/images/rings/tsavoriteRings.webp'
 
 export default {
   components:{
-    vCarousel, NewsArticles, AppLayout,
+    vCarousel, 
+    NewsArticles, 
+    AppLayout,
     AppHeader,
-    Helps
+    Helps,
+    AddToCart
 },
   name: "HomeView",
   created() {},
