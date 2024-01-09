@@ -1,8 +1,8 @@
 <template>
-  <div class="container mx-auto px-4 bg-[#F6F4F2]">
-    <h1 class="text-2xl text-center mt-4 text-[#DFAC93]">NEW IN</h1>
-    <h1 class="text-5xl text-center my-6 text-[#051F34]">New Collection.</h1>
-    <p class="text-center text-lg mb-12 text-[#051F34A8]">
+  <div class="container mx-auto px-4 bg-[#F6F4F2] py-1">
+    <h1 class="text-2xl text-center mt-4 text-[#DFAC93] font-Montserrat">NEW IN</h1>
+    <h1 class="text-5xl text-center my-3 text-[#051F34] font-goudy">New Collection.</h1>
+    <p class="text-center text-lg mb-12 text-[#051F34A8] font-goudy">
       Shine bright in our new 2024 collection of fine jewellery!
     </p>
 
@@ -10,7 +10,7 @@
       <button
         v-for="category in categories"
         :key="category"
-        class="hover:text-[#DFAC93] mx-4"
+        class="hover:text-[#DFAC93] mx-4 font-Montserrat"
         :class="{
           'border-b-2': selectedCategory === category,
           'border-gray-500': selectedCategory === category
@@ -26,7 +26,7 @@
     <div class="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-4 gap-8 lg:px-8 mt-4">
       <ProductCard v-for="product in filteredProducts" :key="product.id" :product="product" />
     </div>
-    <div class="text-center my-8">
+    <div class="text-center my-8 font-Montserrat">
       <button class="text-[#DFAC93] font-bold py-2 px-4 hover:bg-[white] underline">
         VIEW ALL
       </button>
