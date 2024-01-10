@@ -1,16 +1,16 @@
 <template>
   <div class="relative bg-[#F6F4F2] sm:hidden">
-    <img src="../assets/header-icons/image.png" class="w-full h-full object-cover sm:hidden opacity-30" />
+    <img src="../assets/header-icons/image.png" class="w-full h-full min-h-[280px] object-cover sm:hidden opacity-30" />
     <div class="absolute top-0 left-0 p-4 sm:p-0"> <!-- Adjusted padding for better positioning -->
       <div class="fonts text-xs">{{ $t('hereSection.title_1') }}</div>
       <div class="sub-fonts text-4xl mt-2 mb-[7px]">{{ $t('hereSection.title_2') }}</div>
       <span class="sub-fonts text-4xl mt-3">{{ $t('hereSection.title_2Sub') }}</span>
-      <div class="text text-base mb-2">{{ $t('hereSection.title_3') }}</div>
+      <div class="text text-base mb-3">{{ $t('hereSection.title_3') }}</div>
   
       <button
-              class="flex items-center justify-center bg-[#DFAC93] hover:bg-[#e2a789] text-[#F6F4F2]  py-3 px-4 rounded-sm mb-2"
+              class="flex items-center justify-center bg-[#DFAC93] hover:bg-[#e2a789] text-[#F6F4F2]  py-2 px-3 rounded-sm mb-3"
             >
-              <div class="w-5 h-1 mr-2 bg-[#F6F4F2] btn-font"></div>
+              <div class="w-4 h-1 mr-2 bg-[#F6F4F2] btn-font"></div>
               {{ $t('hereSection.shop') }}
             </button>
     </div>
@@ -31,7 +31,7 @@
           <img src="../assets/header-icons/image.png" class="object-cover" />
   
           <div class="justify-center items-center sm:items-end sm:justify-end sm:pl-10 mb-2">
-              <button class="flex items-center justify-center bg-[#DFAC93] hover:bg-[#e2a789] text-white font-bold py-3 px-4 rounded-sm">
+              <button class="flex items-center justify-center bg-[#DFAC93] hover:bg-[#e2a789] text-white font-bold py-3 px-4 rounded-sm mb-2">
                   <div class="w-5 h-1 mr-2 bg-[#F6F4F2]"></div>
                   {{ $t('hereSection.shop') }}
               </button>
