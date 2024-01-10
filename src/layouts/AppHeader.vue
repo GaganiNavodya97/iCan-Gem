@@ -21,17 +21,13 @@
         </div>
 
         <div class="hidden sm:flex md:order-2 md:items-center md:justify-end">
-          <!-- <img src="../assets/header-icons/search.png" alt="Search" class="mr-4" /> -->
           <MagnifyingGlassIcon class="block h-7 w-7 mr-4" aria-hidden="true" />
-          <!-- <img src="../assets/header-icons/shopping.png" alt="Shopping" class="mr-4" /> -->
           <ShoppingBagIcon class="block h-7 w-7 mr-4" aria-hidden="true" />
-          <!-- <img src="../assets/header-icons/user.png" alt="User" /> -->
+
           <UserIcon class="block h-7 w-7" aria-hidden="true" />
         </div>
 
         <div class="sm:hidden flex items-center justify-end">
-          <!-- <img src="../assets/header-icons/search.png" alt="Search" class="icon" />
-          <img src="../assets/header-icons/shopping.png" alt="Shopping" class="icon" /> -->
           <MagnifyingGlassIcon class="block h-6 w-6" aria-hidden="true" />
           <ShoppingBagIcon class="block h-6 w-6" aria-hidden="true" />
 
