@@ -21,17 +21,22 @@
         </div>
 
         <div class="hidden md:flex md:order-2 md:items-center md:justify-end">
-          <img src="../assets/header-icons/search.png" alt="Search" class="mr-4" />
-          <img src="../assets/header-icons/shopping.png" alt="Shopping" class="mr-4" />
-          <img src="../assets/header-icons/user.png" alt="User" />
+          <!-- <img src="../assets/header-icons/search.png" alt="Search" class="mr-4" /> -->
+          <MagnifyingGlassIcon class="block h-7 w-7 mr-4" aria-hidden="true" />
+          <!-- <img src="../assets/header-icons/shopping.png" alt="Shopping" class="mr-4" /> -->
+          <ShoppingBagIcon class="block h-7 w-7 mr-4" aria-hidden="true" />
+          <!-- <img src="../assets/header-icons/user.png" alt="User" /> -->
+          <UserIcon class="block h-7 w-7" aria-hidden="true" />
         </div>
 
         <div class="sm:hidden flex items-center justify-end">
-          <img src="../assets/header-icons/search.png" alt="Search" class="icon" />
-          <img src="../assets/header-icons/shopping.png" alt="Shopping" class="icon" />
+          <!-- <img src="../assets/header-icons/search.png" alt="Search" class="icon" />
+          <img src="../assets/header-icons/shopping.png" alt="Shopping" class="icon" /> -->
+          <MagnifyingGlassIcon class="block h-6 w-6" aria-hidden="true" />
+          <ShoppingBagIcon class="block h-6 w-6" aria-hidden="true" />
 
           <DisclosureButton
-            class="relative inline-flex sm:hidden items-center justify-center p-2 text-gray-400 focus:outline-none"
+            class="relative inline-flex sm:hidden items-center justify-center p-2 focus:outline-none"
           >
             <span class="absolute -inset-0.5"></span>
             <span class="sr-only">Open main menu</span>
@@ -86,7 +91,7 @@
 
 <script setup>
 import { Disclosure, DisclosureButton, DisclosurePanel } from '@headlessui/vue'
-import { Bars3Icon, XMarkIcon } from '@heroicons/vue/24/outline'
+import { Bars3Icon ,XMarkIcon, MagnifyingGlassIcon, ShoppingBagIcon, UserIcon  } from '@heroicons/vue/24/outline'
 
 const navigation = [
   { name: 'Collection', href: '#', current: true },
