@@ -1,10 +1,10 @@
 <template>
   <div class="container mx-auto px-4 bg-[#F6F4F2] py-1">
-    <h1 class="text-2xl  text-center mt-4 text-[#DFAC93] font-Montserrat">{{ $t('addCart.newIn') }}</h1>
-    <h1 class="text-[51.749px] font-normal text-center my-3 text-[#051F34] font-goudy">
+    <h1 class="text-xl sm:text-2xl  text-center mt-4 text-[#DFAC93] font-Montserrat">{{ $t('addCart.newIn') }}</h1>
+    <h1 class="text-[37.125px] sm:text-[51.749px]  font-normal text-center my-3 text-[#051F34] font-goudy">
       {{ $t('addCart.newCollection') }}
     </h1>
-    <p class="text-center text-[27.165px] mb-12 text-[#051F34A8] font-goudy sm:text-red-500">
+    <p class="text-center text-[19.488px] sm:text-[27.165px] mb-12 text-[#051F34A8] font-goudy sm:text-red-500">
       {{ $t('addCart.description') }}
     </p>
 
@@ -97,62 +97,47 @@ export default {
       })
     },
     categoryChange() {
-      console.log('categoryChange', this.selectedCategory)
       this.filteredProducts=[];
       this.items=[];
-      console.log("this.selectedCategory this.filteredProducts",this.filteredProducts)
       switch (this.selectedCategory ) {
         case 'ruby':
-          console.log('ruby');
           if(this.ruby.length === 0){
-            this.getData("911");
+            this.getData("264");
             this.ruby=this.items;
             this.filteredProducts=this.ruby;
-            console.log("1")
           }else{
             this.filteredProducts=this.ruby;
-            console.log("2")
           }
           break;
         case 'blueSapphire':
-          console.log('blueSapphire',this.blueSapphire.length);
           if(this.blueSapphire.length === 0){
-            this.getData("912");
+            this.getData("265");
             this.blueSapphire=this.items;
-            console.log("3 this.filteredProducts ",this.filteredProducts)
             this.filteredProducts=this.blueSapphire;
-            console.log("333 this.filteredProducts",this.filteredProducts)
-            console.log("3")
           }
           else{
             this.filteredProducts=this.blueSapphire;
-            console.log("4")
           }
           break;
         case 'tsavorite':
-          console.log('tsavorite',this.tsavorite.length);
           if(this.tsavorite.length === 0){
-            this.getData("916");
+            this.getData("270");
             this.tsavorite=this.items;
             this.filteredProducts=this.tsavorite;
-            console.log("5")
           }
           else{
             this.filteredProducts=this.tsavorite;
-            console.log("6")
           }
           break;
       };
-      console.log("after switch ",this.filteredProducts)
       
     }
   },
 
  async mounted() {
-    await this.getData("911");
+    await this.getData("264");  //ruby
     this.ruby=this.items;
     this.filteredProducts=this.items;
-    console.log("filteredProducts",this.filteredProducts)
 
   }
 }

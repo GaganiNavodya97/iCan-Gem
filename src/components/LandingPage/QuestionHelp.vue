@@ -80,7 +80,8 @@ export default {
   display: none
 .header-container
   text-align: left
-  max-width: 1336px
+  // max-width: 10rem
+  max-width: 1450px
   margin: 0 auto
   width: 90vw
 .heading-discription

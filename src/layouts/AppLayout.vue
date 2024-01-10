@@ -17,7 +17,7 @@
   </div>
   
   
-  <div class="hidden sm:block bg-[#F6F4F2]">
+  <div class="hidden sm:block bg-[#F6F4F2]">aaa
     <div class="mx-auto custom-max-width px-0 sm:px-6 lg:px-8 py-0 pb-5 sm:py-2">
       <div class="grid grid-cols-1 sm:grid-cols-2">
           <!-- Content for the columns -->
