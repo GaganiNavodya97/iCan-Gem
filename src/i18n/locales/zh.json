@@ -117,5 +117,15 @@
 		"country":{
 		  "sl":"Sri Lanka"
 		}
+	},
+	"addCart":{
+	  "newIn": "新来的",
+	  "newCollection": "新系列。",
+	  "description": "在我们全新的 2024 年高级珠宝系列中闪耀光芒！",
+	  "viewAll": "查看全部",
+	  "addToCart": "添加到购物车",
+	  "Earrings": "耳环",
+	  "Rings": "戒指",
+	  "Necklaces": "项链"
 	}
   }

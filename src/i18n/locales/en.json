@@ -117,6 +117,16 @@
       "country":{
         "sl":"Sri Lanka"
       }
+  },
+  "addCart":{
+    "newIn": "NEW IN",
+    "newCollection": "New Collection.",
+    "description": "Shine bright in our new 2024 collection of fine jewellery!",
+    "viewAll": "VIEW ALL",
+    "addToCart": "Add to cart",
+    "Earrings": "Earrings",
+    "Rings": "Rings",
+    "Necklaces": "Necklaces"
   }
 
 

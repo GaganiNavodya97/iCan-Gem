@@ -116,5 +116,15 @@
 		"country":{
 		  "sl":"Sri Lanka"
 		}
-	}
+	},
+	"addCart":{
+		"newIn": "새로운 기능",
+		"newCollection": "새 컬렉션.",
+		"description": "Shine bright in our new 2024 collection of fine jewellery!",
+		"viewAll": "모두보기",
+		"addToCart": "장바구니에 추가",
+		"Earrings": "귀걸이",
+		"Rings": "반지",
+		"Necklaces": "목걸이"
+	  }
   }
