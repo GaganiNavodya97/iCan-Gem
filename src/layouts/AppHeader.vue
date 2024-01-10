@@ -4,10 +4,10 @@
       <div class="flex h-16 items-center justify-between">
         <div class="flex items-center justify-center">
           <div>
-            <img class="" src="../assets/header-icons/logo.png" alt="logo" />
+            <img class="w-30 h-30" src="../assets/header-icons/logo.png" alt="logo" />
           </div>
           <!-- Updated div for centering -->
-          <div class="hidden flex md:flex ml-[100px] font">
+          <div class="hidden flex sm:flex ml-[100px] font">
             <a
               v-for="item in navigation"
               :key="item.name"
@@ -20,7 +20,7 @@
           </div>
         </div>
 
-        <div class="hidden md:flex md:order-2 md:items-center md:justify-end">
+        <div class="hidden sm:flex md:order-2 md:items-center md:justify-end">
           <!-- <img src="../assets/header-icons/search.png" alt="Search" class="mr-4" /> -->
           <MagnifyingGlassIcon class="block h-7 w-7 mr-4" aria-hidden="true" />
           <!-- <img src="../assets/header-icons/shopping.png" alt="Shopping" class="mr-4" /> -->
