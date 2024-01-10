@@ -21,10 +21,10 @@
                   <a href="#" class="hover:underline">+1 (234) 567 89 00</a>
                 </li> -->
                 <li class="mb-4 leading-6">
-                  <a href="#" class="hover:underline">iCan Lanka (Private) Ltd #422, 
-                    <br>13th Floor, R A De Mel Mawatha, 
-                    <br>Colombo 03. 
-                    <br>Sri Lanka</a>
+                  <a href="#" class="hover:underline"
+                    >iCan Lanka (Private) Ltd #422, <br />13th Floor, R A De Mel Mawatha,
+                    <br />Colombo 03. <br />Sri Lanka</a
+                  >
                 </li>
               </ul>
             </div>
@@ -81,10 +81,10 @@
                 <a href="#" class="hover:underline">+1 (234) 567 89 00</a>
               </li> -->
               <li class="mb-4 leading-6">
-                <a href="#" class="hover:underline">iCan Lanka (Private) Ltd #422, 
-                  <br>13th Floor, R A De Mel Mawatha, 
-                  <br>Colombo 03. 
-                  <br>Sri Lanka</a>
+                <a href="#" class="hover:underline"
+                  >iCan Lanka (Private) Ltd #422, <br />13th Floor, R A De Mel Mawatha,
+                  <br />Colombo 03. <br />Sri Lanka</a
+                >
               </li>
             </ul>
           </div>
@@ -129,7 +129,7 @@
         <hr />
 
         <!-- for small screens -->
-        <div class="text-gray-600 text-xs py-3 px-2 mt-2 second-div md:hidden">
+        <!-- <div class="text-gray-600 text-xs py-3 px-2 mt-2 second-div md:hidden">
           <div class="pl-1">
             {{ $t('footer.shipping') }}
             <select class="text-gray-700">
@@ -146,11 +146,32 @@
 
             <div class="text-gray-600 text-right mt-2">{{ $t('footer.copyright') }}</div>
           </div>
+        </div> -->
+
+        <!-- for small screens -->
+        <div class="text-gray-600 text-sm py-1 px-2 mt-2 second-div md:hidden">
+          <div class="flex mb-3">
+            <div class="">
+              {{ $t('footer.shipping') }}
+              <select class="text-gray-700">
+                <option v-for="country in countries" :key="country">{{ country }}</option>
+              </select>
+            </div>
+            <div class="text-right">
+              <select class="text-gray-700" v-model="selectedLanguage">
+                <option v-for="language in languages" :key="language.value" :value="language.value">
+                  {{ language.lang }}
+                </option>
+              </select>
+            </div>
+          </div>
+          <div class="text-gray-600 text-right mt-2 text-xs">{{ $t('footer.copyright') }}</div>
         </div>
 
         <!-- for medium and above -->
         <div
-          class="hidden md:grid grid-cols-2 gap-8 text-gray-600 text-sm py-3 px-2 my-2 first-div">
+          class="hidden md:grid grid-cols-2 gap-8 text-gray-600 text-sm py-3 px-2 my-2 first-div"
+        >
           <div class="text-gray-600">{{ $t('footer.copyright') }}</div>
           <div class="flex ml-6">
             <div class="text-gray-600 text-sm">
@@ -161,7 +182,9 @@
             </div>
             <div class="text-gray-600 text-sm">
               <select class="text-gray-700 text-sm" v-model="selectedLanguage">
-                <option v-for="language in languages" :key="language.value" :value="language.value">{{ language.lang }}</option>
+                <option v-for="language in languages" :key="language.value" :value="language.value">
+                  {{ language.lang }}
+                </option>
               </select>
             </div>
           </div>
@@ -184,24 +207,25 @@ export default {
       languages: [
         {
           lang: this.$t('footer.Languages.en'),
-          value: "en"
-        },{
+          value: 'en'
+        },
+        {
           lang: this.$t('footer.Languages.zn'),
-          value: "zh"
+          value: 'zh'
         },
         {
           lang: this.$t('footer.Languages.ko'),
-          value: "ko"
+          value: 'ko'
         }
-    ]
+      ]
     }
   },
   props: {},
   methods: {},
-  
+
   watch: {
     selectedLanguage(newLang) {
-      this.$i18n.locale = newLang;
+      this.$i18n.locale = newLang
     }
   }
 }
