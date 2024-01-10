@@ -4,7 +4,7 @@
       <div class="flex h-16 items-center justify-between">
         <div class="flex items-center justify-center">
           <div>
-            <img class="w-30 h-30" src="../assets/header-icons/logo.png" alt="logo" />
+            <img class="w-20 h-20" src="@/assets/images/logo/gemStarLogo.png" alt="logo" />
           </div>
           <!-- Updated div for centering -->
           <div class="hidden flex sm:flex ml-[100px] font">
