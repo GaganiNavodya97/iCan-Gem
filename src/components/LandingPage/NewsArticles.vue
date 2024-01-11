@@ -57,9 +57,9 @@
 </template>
 
 <script>
-import News1 from '@/assets/images/news-1.png';
-import News2 from '@/assets/images/news-2.png';
-import News3 from '@/assets/images/news-3.png';
+import News1 from '@/assets/images/news-6.png';
+import News2 from '@/assets/images/news-4.png';
+import News3 from '@/assets/images/news-5.png';
 
 export default {
   name: "NewsArticles",
