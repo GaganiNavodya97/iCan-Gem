@@ -15,7 +15,7 @@
               class="text-[#565656] hover:text-black py-2 text-lg font-medium flex items-center justify-center"
               :aria-current="item.current ? 'page' : undefined"
             >
-              {{ item.name }}
+              {{ $t(`header.${item.name}`) }} 
             </a>
           </div>
         </div>
@@ -90,8 +90,8 @@ import { Disclosure, DisclosureButton, DisclosurePanel } from '@headlessui/vue'
 import { Bars3Icon ,XMarkIcon, MagnifyingGlassIcon, ShoppingBagIcon, UserIcon  } from '@heroicons/vue/24/outline'
 
 const navigation = [
-  { name: 'Collection', href: '#', current: true },
-  { name: 'Contact Us', href: '#', current: false }
+  { name: 'collection', href: '#', current: true },
+  { name: 'contactUs', href: '#', current: false }
   // { name: 'Favourite', href: '#', current: false },
   // { name: 'Contact Us', href: '#', current: false }
 ]

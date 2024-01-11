@@ -130,7 +130,10 @@
     "ruby":"Ruby",
     "blueSapphire":"BlueSapphire",
     "tsavorite":"Tsavorite"
-
+  },
+  "header":{
+    "collection":"Collection",
+    "contactUs":"Contact Us"
   }
 
 

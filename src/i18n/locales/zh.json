@@ -130,5 +130,9 @@
 	  "ruby":"红宝石宝石",
       "blueSapphire":"蓝色蓝宝石",
       "tsavorite":"少佛来"
+	},
+	"header":{
+	  "collection":"收藏",
+	  "contactUs":"联系我们"
 	}
   }

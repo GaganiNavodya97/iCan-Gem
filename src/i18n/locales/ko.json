@@ -129,5 +129,9 @@
 		"ruby":"루비",
 		"blueSapphire":"파란 사파이어",
 		"tsavorite":"차보라이트"
+	  },
+	  "header":{
+		"collection":"수집",
+		"contactUs":"문의하기"
 	  }
   }
