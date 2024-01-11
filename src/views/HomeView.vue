@@ -2,9 +2,9 @@
   <AppHeader/>
   <AppLayout/>
   <vCarousel :slidesData="gemData"/>
-  <GemList></GemList>
+  <!-- <GemList></GemList> -->
   <vCarousel :slidesData="ringData"/>
-  <jewelleryList></jewelleryList>
+  <!-- <jewelleryList></jewelleryList> -->
   
   <NewsArticles />
   <Helps/>
