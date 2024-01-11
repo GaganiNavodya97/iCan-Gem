@@ -46,11 +46,11 @@ export default {
     return {
       activePanel: null,
       collapses: [
-        { title: "q1", content: "First collapse content" },
-        { title: "q2", content: "Second collapse content" },
-        { title: "q3", content: "Third collapse content" },
-        { title: "q4", content: "Fourth collapse content" },
-        { title: "q5", content: "Fifth collapse content" },
+        { title: "q1", content: "" },
+        { title: "q2", content: "" },
+        { title: "q3", content: "" },
+        { title: "q4", content: "" },
+        { title: "q5", content: "" },
       ],
       FAQImg: FAQImg,
       PlusIcon:PlusIcon
@@ -81,10 +81,9 @@ export default {
   display: none
 .header-container
   text-align: left
-  // max-width: 10rem
-  max-width: 1450px
+  max-width: 1200px
   margin: 0 auto
-  width: 90vw
+  width: 80vw ////
 .heading-discription
   width: 525px
   @media (max-width: 900px)

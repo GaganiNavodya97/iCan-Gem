@@ -82,32 +82,6 @@ export default {
 
 <style lang="css">
 
-/* .carousel__prev,
-.carousel__next {
-  background-color: #FAFAFA;
-  border-radius: 50%;
-} */
-
-/* .nav_icon{
-  font-size: 60px;
-  font-weight: 100;
-  color: #ADADAD;
-} */
-
-/* .nav-icon {
-  width: 24px;
-  height: 24px;
-} */
-
-/* .nav-button-container {
-  background-image: url('@/assets/icons/ellipse.svg');
-  width: 10rem;  
-  height: 10rem; 
-  display: flex;
-  justify-content: center;
-  align-items: center;
-} */
-
 .carousel__prev {
   left: -45px;
 }
@@ -167,14 +141,14 @@ export default {
 
 .gem-title {
   font-size: 1.3em;
-  color: #333;
+  color: #051F34;
   margin-bottom: 0.5em;
   font-family: Sorts Mill Goudy;
 }
 
 .gem-description {
   font-size: 0.9em;
-  color: #666;
+  color: #051F34;
   margin-bottom: 3em;
   font-family: Sorts Mill Goudy;
   line-height: 1.5em;
