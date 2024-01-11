@@ -2,9 +2,9 @@
   <AppHeader/>
   <AppLayout/>
   <vCarousel :slidesData="gemData"/>
-  <!-- <GemList></GemList> -->
+  <GemList></GemList>
   <vCarousel :slidesData="ringData"/>
-  <!-- <jewelleryList></jewelleryList> -->
+  <jewelleryList></jewelleryList>
   
   <NewsArticles />
   <Helps/>
@@ -26,6 +26,11 @@ import blueSapphire from '@/assets/images/gems/blueSapphire.webp'
 import emerald from '@/assets/images/gems/emerald.webp'
 import tsavorite from '@/assets/images/gems/tsavorite.webp'
 import ruby from '@/assets/images/gems/ruby.png'
+
+// import blueSapphire from '@/assets/images/gems/blueSapphire.webp'
+// import emerald from '@/assets/images/gems/emerald.webp'
+// import tsavorite from '@/assets/images/gems/tsavorite.webp'
+// import ruby from '@/assets/images/gems/ruby.png'
 
 import rubyRings from '@/assets/images/rings/rubyRings.webp'
 import sapphireRings from '@/assets/images/rings/sapphireRings.webp'

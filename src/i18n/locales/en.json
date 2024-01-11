@@ -15,7 +15,7 @@
       "title":"Choose Your Favorites.",
       "learnMore":"Learn More",
       "Sapphire":{
-          "title":"Sapphire Gems Stone",
+          "title":"Blue Sapphire Gems Stone",
           "description":"Sapphire refers to the blue variety of corundum, when used alone. Fancy colored sapphires appear in a wide range of colors, including vivid yellow, orange and pink."
       },
       "Ruby":{
@@ -34,9 +34,17 @@
         "title":"Emerald Gems Stone",
         "description":"Emerald is the green to greenish blue variety of the mineral Beryl. Top fine quality Emerald Gems are even more valuable than diamonds."
     },
-    "Tsavorite":{
-        "title":"Tsavorite Gems Stone",
-        "description":"An emerald-green variety of grossular garnet, tsavorite is one of the most popular and expensive varieties of garnet. Suitable for any type of jewelry"
+    "PinkSapphire":{
+        "title":"Pink Sapphire Gems Stone",
+        "description":"Pink Sapphire are an extremely rare precious gem. Pink Sapphires have a soft, lively pink color and can go up to a pink with a violet tinge."
+    },
+    "YellowSapphire":{
+        "title":"Yellow Sapphire Stone",
+        "description":"Yellow sapphires are the Second most abundantly found sapphires in Sri Lanka. Golden yellow being the premium colour kind of its demanding a highest price."
+    },
+    "Padparadscha":{
+        "title":"Padparadscha Gems Stone",
+        "description":"Padparadscha sapphires are a rare gemstone that is admired by gemstone connoisseurs and collectors is used in creating fine jewellery."
     }
   },
   "gemsNewColection":{
