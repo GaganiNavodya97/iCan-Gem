@@ -25,12 +25,12 @@ import Chrysoberyl from '@/assets/images/gems/Chrysoberyl.webp'
 import blueSapphire from '@/assets/images/gems/blueSapphire.webp'
 import emerald from '@/assets/images/gems/emerald.webp'
 import tsavorite from '@/assets/images/gems/tsavorite.webp'
-import ruby from '@/assets/images/gems/ruby.png'
+import ruby from '@/assets/images/gems/ruby.webp'
 
-// import blueSapphire from '@/assets/images/gems/blueSapphire.webp'
-// import emerald from '@/assets/images/gems/emerald.webp'
-// import tsavorite from '@/assets/images/gems/tsavorite.webp'
-// import ruby from '@/assets/images/gems/ruby.png'
+import pinkSapphire from '@/assets/images/gems/pinkSapphire.webp'
+import yellowSapphire from '@/assets/images/gems/yellowSapphire.webp'
+import Padparadscha from '@/assets/images/gems/Padparadscha.webp'
+
 
 import rubyRings from '@/assets/images/rings/rubyRings.webp'
 import sapphireRings from '@/assets/images/rings/sapphireRings.webp'
@@ -72,6 +72,11 @@ export default {
           description: this.$t('gemsFavoriteSection.Aquamarine.description'),
         },
         {
+          name: this.$t('gemsFavoriteSection.Ruby.title'),
+          image: ruby,
+          description: this.$t('gemsFavoriteSection.Ruby.description'),
+        },
+        {
           name: this.$t('gemsFavoriteSection.Emerald.title'),
           image: emerald,
           description: this.$t('gemsFavoriteSection.Emerald.description'),
@@ -82,9 +87,19 @@ export default {
           description: this.$t('gemsFavoriteSection.Tsavorite.description'),
         },
         {
-          name: this.$t('gemsFavoriteSection.Ruby.title'),
-          image: ruby,
-          description: this.$t('gemsFavoriteSection.Ruby.description'),
+          name: this.$t('gemsFavoriteSection.PinkSapphire.title'),
+          image: pinkSapphire,
+          description: this.$t('gemsFavoriteSection.PinkSapphire.description'),
+        },
+        {
+          name: this.$t('gemsFavoriteSection.YellowSapphire.title'),
+          image: yellowSapphire,
+          description: this.$t('gemsFavoriteSection.YellowSapphire.description'),
+        },
+        {
+          name: this.$t('gemsFavoriteSection.Padparadscha.title'),
+          image: Padparadscha,
+          description: this.$t('gemsFavoriteSection.Padparadscha.description'),
         },
       ],
       ringData: [
