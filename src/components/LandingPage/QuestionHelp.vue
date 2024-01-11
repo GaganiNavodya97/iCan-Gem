@@ -14,14 +14,15 @@
                 <div v-for="(item, index) in collapses" :key="index" class="panel">
                   <div class="main-panel-container">
                     <div class="header">
-                      {{ item.title }}
+                      {{ $t(`questions.${item.title}`) }} 
+                      <!-- {{ item.title }} -->
                     </div>
                     <div @click="togglePanel(index)">
                       <img :src="PlusIcon" alt="" class="plus-icon">
                     </div>
                   </div>
                   <div class="content" v-if="this.activePanel === index">
-                    {{ item.title }}
+                    {{ item.content }}
                   </div>
                 </div>
               </div>
@@ -45,11 +46,11 @@ export default {
     return {
       activePanel: null,
       collapses: [
-        { title: "Where do you ship to?", content: "First collapse content" },
-        { title: "How can I make the order?", content: "Second collapse content" },
-        { title: "Can I change my order after it is placed?", content: "Third collapse content" },
-        { title: "Do you have offline stores?", content: "Third collapse content" },
-        { title: "Can I cancel my order?", content: "Third collapse content" },
+        { title: "q1", content: "First collapse content" },
+        { title: "q2", content: "Second collapse content" },
+        { title: "q3", content: "Third collapse content" },
+        { title: "q4", content: "Fourth collapse content" },
+        { title: "q5", content: "Fifth collapse content" },
       ],
       FAQImg: FAQImg,
       PlusIcon:PlusIcon

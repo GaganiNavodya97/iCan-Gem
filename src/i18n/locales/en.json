@@ -134,6 +134,13 @@
   "header":{
     "collection":"Collection",
     "contactUs":"Contact Us"
+  },
+  "questions":{
+    "q1":"Where do you ship to?",
+    "q2":"How can I make the order?",
+    "q3":"Can I change my order after it is placed?",
+    "q4":"Do you have offline stores?",
+    "q5":"Can I cancel my order?"
   }
 
 
