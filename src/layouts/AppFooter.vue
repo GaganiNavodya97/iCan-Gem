@@ -32,16 +32,16 @@
                 {{ $t('footer.customerCare') }}
               </h2>
               <ul class="text-gray-500 font-medium">
-                <li class="mb-4">
+                <li class="mb-3">
                   <a href="#" class="hover:underline">{{ $t('footer.certificates') }}</a>
                 </li>
-                <li class="mb-4">
+                <li class="mb-3">
                   <a href="#" class="hover:underline">{{ $t('footer.faq') }}</a>
                 </li>
-                <li class="mb-4">
+                <li class="mb-3">
                   <a href="#" class="hover:underline">{{ $t('footer.legalNprivacy') }}</a>
                 </li>
-                <li class="mb-4">
+                <li class="mb-3">
                   <a href="#" class="hover:underline">{{ $t('footer.returns') }}</a>
                 </li>
               </ul>
