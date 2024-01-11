@@ -69,7 +69,7 @@
 
         <!-- for medium and above screens -->
         <div class="hidden md:grid gap-8 px-4 py-6 lg:py-8 md:grid-cols-3">
-          <div>
+          <div class="ml-5">
             <h2 class="mb-6 text-sm font-semibold text-gray-900 uppercase">
               {{ $t('footer.getInTouch') }}
             </h2>
@@ -88,7 +88,7 @@
               </li>
             </ul>
           </div>
-          <div>
+          <div class="ml-5 pl-5">
             <h2 class="mb-6 text-sm font-semibold text-gray-900 uppercase">
               {{ $t('footer.customerCare') }}
             </h2>
@@ -107,7 +107,7 @@
               </li>
             </ul>
           </div>
-          <div class="">
+          <div class="ml-5 pl-5">
             <h2 class="mb-6 text-sm font-semibold text-gray-900 uppercase">
               {{ $t('footer.followus') }}
             </h2>
