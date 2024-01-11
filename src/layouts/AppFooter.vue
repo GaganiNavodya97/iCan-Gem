@@ -14,18 +14,17 @@
                 {{ $t('footer.getInTouch') }}
               </h2>
               <ul class="text-gray-500 font-medium">
-                <!-- <li class="mb-4">
-                  <a href="#" class="hover:underline">aurora@gmail.com</a>
-                </li> -->
-                <!-- <li class="mb-4">
-                  <a href="#" class="hover:underline">+1 (234) 567 89 00</a>
-                </li> -->
-                <li class="mb-4 leading-6">
-                  <a href="#" class="hover:underline"
-                    >iCan Lanka (Private) Ltd #422, <br />13th Floor, R A De Mel Mawatha,
-                    <br />Colombo 03. <br />Sri Lanka</a
-                  >
-                </li>
+                <li class="mb-3 leading-6">
+                SRI LANKA <br>
+                #422, 13th Floor, R A De Mel Mawatha, Colombo 03. Sri Lanka.
+                <br>Tel  +94 788766666
+              </li>
+
+              <li class="mb-3 leading-6">
+                KOREA <br>
+                334, Sports Park-ro, Geumjeong-gu, Busan.
+                <br>Tel   010 7574 1058
+              </li>
               </ul>
             </div>
             <div class="ml-6">
@@ -74,17 +73,16 @@
               {{ $t('footer.getInTouch') }}
             </h2>
             <ul class="text-gray-500 font-medium">
-              <!-- <li class="mb-4">
-                <a href="#" class="hover:underline">aurora@gmail.com</a>
-              </li> -->
-              <!-- <li class="mb-4">
-                <a href="#" class="hover:underline">+1 (234) 567 89 00</a>
-              </li> -->
-              <li class="mb-4 leading-6">
-                <a href="#" class="hover:underline"
-                  >iCan Lanka (Private) Ltd #422, <br />13th Floor, R A De Mel Mawatha,
-                  <br />Colombo 03. <br />Sri Lanka</a
-                >
+              <li class="mb-3 leading-6">
+                SRI LANKA <br>
+                #422, 13th Floor, R A De Mel Mawatha, Colombo 03. Sri Lanka.
+                <br>Tel  +94 788766666
+              </li>
+
+              <li class="mb-3 leading-6">
+                KOREA <br>
+                334, Sports Park-ro, Geumjeong-gu, Busan.
+                <br>Tel   010 7574 1058
               </li>
             </ul>
           </div>
@@ -111,17 +109,17 @@
             <h2 class="mb-6 text-sm font-semibold text-gray-900 uppercase">
               {{ $t('footer.followus') }}
             </h2>
-            <div class="flex">
-              <a href="#">
+            <div class="flex justify-center items-center">
+              <a href="#" class="mr-0">
                 <img src="@/assets/icons/fbIcon.svg" alt="Facebook" class="w-7 h-7" />
               </a>
-              <a href="#">
+              <a href="#" class="mr-0">
                 <img src="@/assets/icons/instaIcon.svg" alt="Instagram" class="w-7 h-7" />
               </a>
-              <a href="#">
+              <a href="#" class="mr-0">
                 <img src="@/assets/icons/youtubeIcon.svg" alt="Youtube" class="w-8 h-8" />
               </a>
-              <div class="mr-20"></div>
+              <!-- <div class="mr-20"></div> -->
             </div>
           </div>
         </div>
