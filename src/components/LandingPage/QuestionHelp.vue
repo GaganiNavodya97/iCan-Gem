@@ -1,5 +1,5 @@
 <template>
-  <div class="question-container md:mx-5">
+  <div class="question-container md:mx-5 my-3">
     <div class="header-container">
       <div class="heading">{{ $t('faq.faq') }}</div>
       <div class="main-heading">{{ $t('faq.needHelp') }}</div>

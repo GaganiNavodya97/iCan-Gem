@@ -99,6 +99,8 @@ export default {
   font-style: normal
   font-weight: 400
   line-height: normal
+  @media (max-width: 640px)
+    font-size: 34px
 .heading-discription
   color: rgba(5, 31, 52, 0.66)
   font-family: Sorts Mill Goudy
@@ -106,6 +108,8 @@ export default {
   font-style: normal
   font-weight: 400
   line-height: normal
+  @media (max-width: 640px)
+    font-size: 18px
 .topic
   color: #DFAC93
 .main-topc
