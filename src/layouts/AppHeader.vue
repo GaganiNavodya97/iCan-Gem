@@ -4,10 +4,10 @@
       <div class="flex h-16 items-center justify-between">
         <div class="flex items-center justify-center">
           <div>
-            <img class="" src="../assets/header-icons/logo.png" alt="logo" />
+            <img class="w-20 h-20" src="@/assets/images/logo/gemStarLogo.png" alt="logo" />
           </div>
           <!-- Updated div for centering -->
-          <div class="hidden flex md:flex ml-[100px] font">
+          <div class="hidden flex sm:flex ml-[200px] font ">
             <a
               v-for="item in navigation"
               :key="item.name"
@@ -15,23 +15,24 @@
               class="text-[#565656] hover:text-black py-2 text-lg font-medium flex items-center justify-center"
               :aria-current="item.current ? 'page' : undefined"
             >
-              {{ item.name }}
+              {{ $t(`header.${item.name}`) }} 
             </a>
           </div>
         </div>
 
-        <div class="hidden md:flex md:order-2 md:items-center md:justify-end">
-          <img src="../assets/header-icons/search.png" alt="Search" class="mr-4" />
-          <img src="../assets/header-icons/shopping.png" alt="Shopping" class="mr-4" />
-          <img src="../assets/header-icons/user.png" alt="User" />
+        <div class="hidden sm:flex md:order-2 md:items-center md:justify-end">
+          <MagnifyingGlassIcon class="block h-7 w-7 mr-4" aria-hidden="true" />
+          <ShoppingBagIcon class="block h-7 w-7 mr-4" aria-hidden="true" />
+
+          <UserIcon class="block h-7 w-7" aria-hidden="true" />
         </div>
 
         <div class="sm:hidden flex items-center justify-end">
-          <img src="../assets/header-icons/search.png" alt="Search" class="icon" />
-          <img src="../assets/header-icons/shopping.png" alt="Shopping" class="icon" />
+          <MagnifyingGlassIcon class="block h-6 w-6" aria-hidden="true" />
+          <ShoppingBagIcon class="block h-6 w-6" aria-hidden="true" />
 
           <DisclosureButton
-            class="relative inline-flex sm:hidden items-center justify-center p-2 text-gray-400 focus:outline-none"
+            class="relative inline-flex sm:hidden items-center justify-center p-2 focus:outline-none"
           >
             <span class="absolute -inset-0.5"></span>
             <span class="sr-only">Open main menu</span>
@@ -86,11 +87,11 @@
 
 <script setup>
 import { Disclosure, DisclosureButton, DisclosurePanel } from '@headlessui/vue'
-import { Bars3Icon, XMarkIcon } from '@heroicons/vue/24/outline'
+import { Bars3Icon ,XMarkIcon, MagnifyingGlassIcon, ShoppingBagIcon, UserIcon  } from '@heroicons/vue/24/outline'
 
 const navigation = [
-  { name: 'Collection', href: '#', current: true },
-  { name: 'Contact Us', href: '#', current: false }
+  { name: 'collection', href: '#', current: true },
+  { name: 'contactUs', href: '#', current: false }
   // { name: 'Favourite', href: '#', current: false },
   // { name: 'Contact Us', href: '#', current: false }
 ]

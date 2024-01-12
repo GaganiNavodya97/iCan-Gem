@@ -14,7 +14,7 @@
 		"title":"즐겨 찾기를 선택하십시오.",
 		"learnMore":"더 알아보기",
 		"Sapphire":{
-			"title":"사파이어 보석 석",
+			"title":"파란 사파이어",
 			"description":"사파이어는 단독으로 사용될 때 푸른 종류의 Corundum을 말합니다. 멋진 색상의 사파이어는 생생한 노란색, 주황색 및 분홍색을 포함한 다양한 색상으로 나타납니다."
 		},
 		"Ruby":{
@@ -36,6 +36,18 @@
 		"Tsavorite":{
 			"title":"Tsavorite 보석 석",
 			"description":"에메랄드-그린 다양한 매트 넷, Tsavorite는 가장 인기 있고 값 비싼 종류의 가넷 중 하나입니다. 모든 유형의 보석에 적합합니다"
+		},
+		"PinkSapphire":{
+			"title":"핑크 사파이어",
+			"description":"핑크 사파이어는 매우 드문 소중한 보석입니다. 핑크 사파이어는 부드럽고 활기찬 핑크색을 가지고 있으며 바이올렛 색조로 분홍색으로 올라갈 수 있습니다."
+		},
+		"YellowSapphire":{
+			"title":"옐로우 사파이어",
+			"description":"노란 사파이어는 스리랑카에서 가장 풍부하게 발견 된 사파이어입니다. 골든 옐로우는 가장 높은 가격의 프리미엄 컬러 종류입니다."
+		},
+		"Padparadscha":{
+			"title":"Padparadscha",
+			"description":"Padparadscha는 보석 감정가들에게 존경하는 희귀 한 보석이며 수집가는 훌륭한 주얼리를 만드는 데 사용됩니다."
 		}
 	},
 	"gemsNewColection":{
@@ -116,5 +128,29 @@
 		"country":{
 		  "sl":"Sri Lanka"
 		}
-	}
+	},
+	"addCart":{
+		"newIn": "새로운 기능",
+		"newCollection": "새 컬렉션.",
+		"description": "Shine bright in our new 2024 collection of fine jewellery!",
+		"viewAll": "모두보기",
+		"addToCart": "장바구니에 추가",
+		"Earrings": "귀걸이",
+		"Rings": "반지",
+		"Necklaces": "목걸이",
+		"ruby":"루비",
+		"blueSapphire":"파란 사파이어",
+		"tsavorite":"차보라이트"
+	  },
+	  "header":{
+		"collection":"수집",
+		"contactUs":"문의하기"
+	  },
+	  "questions":{
+		"q1":"어디로 배송되나요?",
+		"q2":"주문은 어떻게 할 수 있나요?",
+		"q3":"주문한 후 변경할 수 있나요?",
+		"q4":"오프라인 매장이 있나요?",
+		"q5":"주문을 취소할 수 있나요?"
+	  }
   }

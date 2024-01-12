@@ -15,7 +15,7 @@
 		"title":"选择您的最爱。",
 		"learnMore":"了解更多",
 		"Sapphire":{
-			"title":"菊部分宝石石",
+			"title":"蓝色蓝宝石",
 			"description":"蓝宝石单独使用时指的是蓝色的蓝色种类。精美的彩色蓝宝石以各种颜色出现，包括生动的黄色，橙色和粉红色。"
 		},
 		"Ruby":{
@@ -37,6 +37,18 @@
 		"Tsavorite":{
 			"title":"少佛来",
 			"description":"Tsavorite是翠绿色的绿色石榴石，是石榴石的最受欢迎和昂贵的品种之一。适合任何类型的珠宝"
+		},
+		"PinkSapphire":{
+			"title":"粉红色的蓝宝石",
+			"description":"粉红色的蓝宝石是一种极为稀有的宝石。粉红色的蓝宝石具有柔软，活泼的粉红色颜色，可以用紫罗兰色的粉红色变成粉红色。"
+		},
+		"YellowSapphire":{
+			"title":"黄色蓝宝石",
+			"description":"黄色蓝宝石的最重要特征是明亮晶莹的光彩。 金黄色是其要求最高价格的优质颜色。"
+		},
+		"Padparadscha":{
+			"title":"帕帕拉恰",
+			"description":"帕帕拉恰是一种稀有的宝石，被宝石鉴赏家和收藏家钦佩，用于制作精美的珠宝。"
 		}
 	},
 	"gemsNewColection":{
@@ -117,5 +129,29 @@
 		"country":{
 		  "sl":"Sri Lanka"
 		}
+	},
+	"addCart":{
+	  "newIn": "新来的",
+	  "newCollection": "新系列。",
+	  "description": "在我们全新的 2024 年高级珠宝系列中闪耀光芒！",
+	  "viewAll": "查看全部",
+	  "addToCart": "添加到购物车",
+	  "Earrings": "耳环",
+	  "Rings": "戒指",
+	  "Necklaces": "项链",
+	  "ruby":"红宝石宝石",
+      "blueSapphire":"蓝色蓝宝石",
+      "tsavorite":"少佛来"
+	},
+	"header":{
+	  "collection":"收藏",
+	  "contactUs":"联系我们"
+	},
+	"questions":{
+	  "q1":"你们运送到哪里？",
+	  "q2":"我怎样才能下订单？",
+	  "q3":"下单后我可以更改订单吗？",
+	  "q4":"你们有线下商店吗？",
+	  "q5":"我可以取消订单吗？"
 	}
   }

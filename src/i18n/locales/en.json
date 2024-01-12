@@ -15,7 +15,7 @@
       "title":"Choose Your Favorites.",
       "learnMore":"Learn More",
       "Sapphire":{
-          "title":"Sapphire Gems Stone",
+          "title":"Blue Sapphire Gems Stone",
           "description":"Sapphire refers to the blue variety of corundum, when used alone. Fancy colored sapphires appear in a wide range of colors, including vivid yellow, orange and pink."
       },
       "Ruby":{
@@ -37,6 +37,18 @@
     "Tsavorite":{
         "title":"Tsavorite Gems Stone",
         "description":"An emerald-green variety of grossular garnet, tsavorite is one of the most popular and expensive varieties of garnet. Suitable for any type of jewelry"
+    },
+    "PinkSapphire":{
+        "title":"Pink Sapphire Gems Stone",
+        "description":"Pink Sapphire are an extremely rare precious gem. Pink Sapphires have a soft, lively pink color and can go up to a pink with a violet tinge."
+    },
+    "YellowSapphire":{
+        "title":"Yellow Sapphire Stone",
+        "description":"Yellow sapphires are the Second most abundantly found sapphires in Sri Lanka. Golden yellow being the premium colour kind of its demanding a highest price."
+    },
+    "Padparadscha":{
+        "title":"Padparadscha Gems Stone",
+        "description":"Padparadscha sapphires are a rare gemstone that is admired by gemstone connoisseurs and collectors is used in creating fine jewellery."
     }
   },
   "gemsNewColection":{
@@ -117,6 +129,30 @@
       "country":{
         "sl":"Sri Lanka"
       }
+  },
+  "addCart":{
+    "newIn": "NEW IN",
+    "newCollection": "New Collection.",
+    "description": "Shine bright in our new 2024 collection of fine jewellery!",
+    "viewAll": "VIEW ALL",
+    "addToCart": "Add to cart",
+    "Earrings": "Earrings",
+    "Rings": "Rings",
+    "Necklaces": "Necklaces",
+    "ruby":"Ruby",
+    "blueSapphire":"BlueSapphire",
+    "tsavorite":"Tsavorite"
+  },
+  "header":{
+    "collection":"Collection",
+    "contactUs":"Contact Us"
+  },
+  "questions":{
+    "q1":"Where do you ship to?",
+    "q2":"How can I make the order?",
+    "q3":"Can I change my order after it is placed?",
+    "q4":"Do you have offline stores?",
+    "q5":"Can I cancel my order?"
   }
 
 
