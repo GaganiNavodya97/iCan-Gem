@@ -7,7 +7,7 @@
             <img class="w-20 h-20" src="@/assets/images/logo/gemStarLogo.png" alt="logo" />
           </div>
           <!-- Updated div for centering -->
-          <div class="hidden flex sm:flex ml-[100px] font">
+          <div class="hidden flex sm:flex ml-[200px] font ">
             <a
               v-for="item in navigation"
               :key="item.name"
